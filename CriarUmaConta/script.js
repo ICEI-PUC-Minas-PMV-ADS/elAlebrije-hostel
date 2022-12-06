@@ -53,7 +53,7 @@ function checkInputs() {
   });
 
   if (formIsValid) {
-    console.log("O formulário está 100% válido!");
+    window.location.href = "../DadosPessoais/index.html";
   }
 }
 
@@ -81,64 +81,43 @@ function checkEmail(email) {
   );
 }
 
+// Definindo o valor
+// Caso não tenho vai zerar
+if (localStorage.username) {
+  document.getElementById("username").value = localStorage.username;
+}
+if (localStorage.email) {
+  document.getElementById("email").value = localStorage.email;
+}
+if (localStorage.password) {
+  document.getElementById("password").value = localStorage.password;
+}
+if (localStorage.asswordConfirmation) {
+  document.getElementById("password-confirmation").value =
+    localStorage.passwordConfirmation;
+}
 
-// Definindo o valor 
-        // Caso não tenho vai zerar
-        if (localStorage.username) {
-          document.getElementById('username').value = localStorage.username;
-      }
-      if (localStorage.email) {
-          document.getElementById('email').value = localStorage.email;
-      }
-      if (localStorage.password) {
-          document.getElementById('password').value = localStorage.password;
-      }
-      if (localStorage.asswordConfirmation) {
-        document.getElementById('password-confirmation').value = localStorage.passwordConfirmation;
-    }
+// Salvando no localStorage
+var salvarData = function () {
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var passwordConfirmation = document.getElementById(
+    "password-confirmation"
+  ).value;
 
-      // Salvando no localStorage
-      var salvarData = function () {
-          var username = document.getElementById('username').value;
-          var email = document.getElementById('email').value;
-          var password = document.getElementById('password').value;
-          var passwordConfirmation = document.getElementById('password-confirmation').value;
-          
+  localStorage.setItem("username", username);
+  localStorage.setItem("email", email);
+  localStorage.setItem("password", password);
+  localStorage.setItem("password-confirmation", passwordConfirmation);
+};
 
-          localStorage.setItem('username', username);
-          localStorage.setItem('email', email);
-          localStorage.setItem('password', password);
-          localStorage.setItem('password-confirmation', passwordConfirmation);
+// Ativando o função quando houver alteração no documento
+document.onchange = salvarData;
 
-        }
-      
-      // Ativando o função quando houver alteração no documento
-      document.onchange = salvarData;
-
-      
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Definindo o valor 
-        // Caso não tenho vai zerar
-        /*if (localStorage.pessoas) {
+// Definindo o valor
+// Caso não tenho vai zerar
+/*if (localStorage.pessoas) {
           document.getElementById('username').value = localStorage.username;
       }
       if (localStorage.dataInicio) {
@@ -157,7 +136,7 @@ function checkEmail(email) {
           var email = document.getElementById('email').value;
           var password = document.getElementById('password').value;
           var passwordConfirmation = document.getElementById('password-confirmation').value;
-          
+
 
           localStorage.setItem('username', username);
           localStorage.setItem('email', email);
@@ -169,5 +148,3 @@ function checkEmail(email) {
 
       // Botão limpar
       localStorage.clear('enviar');*/
-
-      

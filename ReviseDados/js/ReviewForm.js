@@ -49,6 +49,7 @@ saveModification.addEventListener("click", (e) => {
   };
 
   updateProvider(provider);
+  window.location.href = "../confirmacao.html";
   alert("Dados salvos com sucesso!");
 });
 getInfoClient();

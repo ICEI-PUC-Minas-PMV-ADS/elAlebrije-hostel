@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/header_style.css">
+    <link rel="stylesheet" type="text/css" href="./ReviseDados/assets/global.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <script src="./script.js" defer></script>
     <title>El alebrije hostel</title>
@@ -29,7 +30,7 @@
         <div class="center">
             <div class="logo" style="margin-top:-1rem">
                 <a href="./index.html" target="_self">
-                <h3><img src="../assets/hostal.png" width="103">
+                    <h3><img src="./assets/hostal.png" width="103">
                 </a>
             </div>
             <!--center-->
@@ -42,7 +43,7 @@
             <div class="menu-container">
                 <a href="" target="_self">SOBRE</a>
                 <a href="" target="_self">FOTOS</a>
-                <a class="active-menu" href="" href="../acomodacao.html" target="_self">ACOMODAÇÕES</a>
+                <a href="" target="_self">ACOMODAÇÕES</a>
                 <a href="./PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
                 <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
                 <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
@@ -64,20 +65,42 @@
                     margin="35px 0;"></a>
         </div>
 
-        <button class="btn-res" style="font-size: 20px; margin-top: 0.3rem;"><a href="">Reserve&nbsp;agora </a>
+        <button class="btn-res" style="margin-top: 0.1rem;"><a href="../acomodacao.html" style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
         </button>
 
         <div class="btn">
-            <button class="btn-enter"><b><a href="">ENTRAR</b></a>
+          <button class="btn-enter"><b><a href="./Login/index.html" style="height: 30px; width: 30px; padding:0.6rem">ENTRAR</b></a>
         </div>
-        <button class="btn-cad" style="font-size: 12px; margin-top: 0.3rem;"><b><a href="">CADASTRAR</b></a></div>
+        <button class="btn-cad"><b><a href="./CriarUmaConta/index.html" style="height: 30px; width: 30px; padding:0.6rem">CADASTRAR</b></a></div>
 
-            </div>
+          </div>
     </header>
-    <div class="container" style="height: 100vh; margin-top: 1rem">
-
-        <div class="row justify-content-center mt-10">
-            <div class="col-sm-8">
+    <div class="container">
+        <div class="barra-container">
+            <div class="barra"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 steps-dados">
+                <div class="dados">
+                    <img src="./assets/cama-de-hotel.svg" alt="hotel-bed" class="img-responsive" />
+                    <div class="dados-active">
+                        <span style="color: #fff; font-size: 18px;">Escolha seu quarto</span>
+                    </div>
+                </div>
+                <div class="dados-confirmacao">
+                    <img src="./assets/aceitaram.svg" alt="hotel-bed" class="img-responsive" opa />
+                    <div class="dados-disable">
+                        <span style="color: #000; font-size: 18px;">Revise seus dados</span>
+                    </div>
+                </div>
+                <div class="dados-confirmacao">
+                    <img src="./assets/verificado.svg" alt="hotel-bed" class="img-responsive" />
+                    <div class="dados-disable">
+                        <span style="color: #000; font-size: 18px;">Confirmação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-review">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
@@ -98,7 +121,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="./images/quarto.jpeg" style="height: 190px;" class="img-fluid rounded-start"
+                                <img src="./images/quarto.svg" style="height: 300px;" class="img-fluid rounded-start"
                                     alt="quarto01">
                             </div>
                             <div class="col-sm-4 text-right">
@@ -148,7 +171,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="./images/img008.jpg" style="height: 190px;" class="img-fluid rounded-start"
+                                <img src="./images/img008.svg" style="height: 300px" class="img-fluid rounded-start"
                                     alt="quarto01">
                             </div>
                             <div class="col-sm-4 text-right">
@@ -197,7 +220,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-5">
-                                <img src="./images/img012.jpg" style="height: 190px;" class="img-fluid rounded-start"
+                                <img src="./images/img012.svg" style="height: 300px;" class="img-fluid rounded-start"
                                     alt="quarto01">
                             </div>
                             <div class="col-sm-4 text-right">
@@ -244,49 +267,46 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row justify-content-center" style="margin-top: 20px;">
-            <div class="col-sm-8">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <label for="startDate">Entrada</label>
+            <div class="col-md-12" style="display: flex">
+                <div style="display: flex; justify-content: space-between;width: 100%; padding: 0.8rem; background: #9E2FBA; border-radius: 8px">
+                    <div>
+                        <label for="startDate" style="color: #fff">Entrada</label>
                         <input id="startDate" class="form-control" type="date" />
                     </div>
-                    <div class="col-sm-4">
-                        <label for="endDate">Saída</label>
+                    <div>
+                        <label for="endDate" style="color: #fff">Saída</label>
                         <input id="endDate" class="form-control" type="date" />
                     </div>
-                    <div class="col-sm-3 offset-sm-1">
-                        <div class="card  mb-3">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item text-center">
-                                    <h5 class="card-title ">Total</h5>
-                                </li>
-                                <li class="list-group-item text-center">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">R$</span>
-                                        <input disabled="disable" type="number" value="186.54" class="form-control"
-                                            style="text-align: center; background-color: white;">
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-sm-6 offset-sm-1">
+                    <div class="card" style="height: 150px;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center">
+                                <h5 class="card-title ">Total</h5>
+                            </li>
+                            <li class="list-group-item text-center">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">R$</span>
+                                    <input disabled="disable" type="number" value="186.54" class="form-control"
+                                        style="text-align: center; background-color: white;">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+
+            </div>
+            <div class="col-sm-3 offset-sm-9 text-center">
+                <div class="input-group mb-3 ">
+                    <a href="./ReviseDados/ReviseDados.html" target="_self">
+                        <input type="button"
+                            style="background: #9e2fba; padding: 1rem 2rem 1rem 2rem; color: #fff; font-size: 18px; border-radius: 30px;"
+                            value="Próximo" class="botaoProximo" />
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center" style="margin-top: 20px; margin-bottom:1rem">
-            <div class="col-sm-8">
-                <div class="row">
-                    <div class="col-sm-3 offset-sm-9 text-center">
-                        <div class="input-group mb-3 ">
-                            <input type="button" value="Proxímo" class="botaoProximo" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="footer">
             <div style="display: flex; margin-left: 1rem; align-items: center">
                 <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
