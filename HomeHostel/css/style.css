@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  max-width: 1980px;
+  padding: 0 2%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.hostal-central {
+  display: block;
+  text-align: center;
+  margin-top: 300px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.translate {
+  position: absolute;
+  display: flex;
+  right: 150px;
+  top: -10px;
+}
+
+.translate1 {
+  position: absolute;
+  display: flex;
+  right: 100px;
+  top: -10px;
+}
+
+.translate2 {
+  position: absolute;
+  display: flex;
+  right: 50px;
+  top: -10px;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.btn-enter a {
+  padding: 2px 10px;
+  background: #9e2fba;
+  height: 30px;
+  border: none;
+  text-decoration: none;
+  border-radius: 13px;
+}
+
+.btn-cad a {
+  padding: 4px 8px;
+  background: #9e2fba;
+  height: 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 13px;
+}
+
+.btn-res a {
+  padding: 5px 15px;
+  background: #9e2fba;
+  height: 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 13px;
+}
+
+.btn {
+  position: absolute;
+  right: 280px;
+  top: 15px;
+  border: none;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-enter {
+  position: flex;
+  right: 10px;
+  top: 5px;
+  border: none;
+  color: #9e2fba;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-cad {
+  position: absolute;
+  right: 295px;
+  top: 65px;
+  border: none;
+  color: #9e2fba;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.btn-res {
+  position: absolute;
+  right: 29px;
+  top: 60px;
+  border: none;
+  color: #9e2fba;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 500px;
+}
+
+.extras#c1 {
+  position: absolute;
+  display: block;
+}
+
+.hostal {
+  padding-top: 30px;
+  width: 10%;
+}
+
+header {
+  padding: 0px 0;
+  background-color: #eeecee;
+  height: 99px;
+}
+.menu-container {
+  justify-self: space-between;
+  text-align: right;
+  width: 50%;
+}
+
+.menu-container a.active-menu {
+  background-color: #9e2fba;
+}
+
+.menu-container a {
+  display: inline-block;
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+  padding: 30px 10px;
+  line-height: 40px;
+  transition: 0.8s;
+  padding-top: 30px;
+}
+
+.menu-container a:hover {
+  color: #9e2fba;
+}
+
+.social-media {
+  position: absolute;
+  right: 21px;
+  top: 250px;
+}
+
+.extras {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  margin: 20px;
+  background-color: white;
+}
+
+.translate img {
+  display: block;
+  width: 30px;
+  margin: 35px 0;
+}
+
+.translate1 img {
+  display: block;
+  width: 30px;
+  margin: 35px 0;
+}
+
+.translate2 img {
+  display: block;
+  width: 30px;
+  margin: 35px 0;
+}
+
+.social-media img {
+  display: block;
+  width: 85px;
+  margin: 35px 0;
+}
+
+.cf {
+  position: absolute;
+  left: 2rem;
+  top: 370px;
+}
+
+.wf {
+  position: absolute;
+  left: 2.8rem;
+  top: 510px;
+}
+
+.rcp {
+  position: absolute;
+  left: 2.5rem;
+  top: 650px;
+}
+
+.cortesia {
+  position: absolute;
+  left: -0.8rem;
+  top: 250px;
+}
+
+.cortesia img {
+  display: block;
+  width: 78px;
+  margin: 35px 3.5rem;
+}
+
+.cortesia1 {
+  position: absolute;
+  left: 1rem;
+  top: 390px;
+}
+
+.cortesia1 img {
+  display: block;
+  width: 60px;
+  margin: 48px 2rem;
+}
+
+.cortesia2 {
+  position: absolute;
+  left: 1.7rem;
+  top: 530px;
+}
+
+.cortesia2 img {
+  display: block;
+  width: 60px;
+  margin: 48px 1.5rem;
+}
+
+div#q1 {
+  display: block;
+  bottom: 356px;
+  right: -65px;
+  width: 180px;
+  height: 495px;
+  border-radius: 8%;
+  background-color: white;
+  opacity: 50%;
+}
+
+div#q2 {
+  display: block;
+  bottom: 356px;
+  right: 1791px;
+  width: 180px;
+  height: 495px;
+  border-radius: 8%;
+  background-color: white;
+  opacity: 50%;
+}
+
+div#c5 {
+  bottom: 729px;
+  left: 12px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #9e2fba;
+}
+
+div#c6 {
+  bottom: 589px;
+  left: 12px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #9e2fba;
+}
+div#c7 {
+  bottom: 448px;
+  left: 12px;
+  width: 90px;
+  height: 95px;
+  border-radius: 50%;
+  background-color: #9e2fba;
+}
+
+div#q3 {
+  display: block;
+  bottom: 490px;
+  right: 510px;
+  width: 890px;
+  height: 230px;
+  border-radius: 3%;
+  background-color: white;
+  opacity: 10%;
+}
