@@ -16,16 +16,16 @@ A elaboração do design e a disposição dos elementos baseou-se no modelo feit
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  <title>Hostal El Alebrije</title>
 <style>
-    
+
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
     background-color: rgb(252, 252, 252);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-  
+
  </style>
 
  </head>
@@ -43,9 +43,9 @@ body{
         <a href="">FOTOS</a>
         <a href="">ACOMODAÇÕES</a>
         <a href="">LOCALIZAÇÃO</a>
-        <a href="">AVALIÇÕES</a>
+        <a href="">AVALIAÇÕES</a>
         <a href="">EXPLORE</a>
-    </div><!--menu-container-->    
+    </div><!--menu-container-->
     </div>
     <div class="btn">
         <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#9e2fba;;">ENTRAR</b></a></div>
@@ -108,3 +108,4 @@ body{
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
  </body>
 </html>
+```

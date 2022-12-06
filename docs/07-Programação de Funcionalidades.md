@@ -1,15 +1,20 @@
 # Programação de Funcionalidades
+
 ## Home (RF-011) e (RF-017)
-### Desenvolvedor(a): Danrley G M Paula 
-- Funcionalidade tradução e links redes sociais 
+
+### Desenvolvedor(a): Danrley G M Paula
+
+- Funcionalidade tradução e links redes sociais
 
 ![home](https://user-images.githubusercontent.com/112135999/200984935-d7532889-49d1-40b2-8b6c-41685c853fdf.png)
 
 ### Requisito atendido:
+
 - RF-011 - O sistema será traslado em três línguas: português, espanhol e inglês
 - RF-017 - O site deverá apresentar links redirecionando às outras redes da empresa, como: Instagram, Youtube, Facebook e afins
 
 ### Artefatos da funcionalidade:
+
 - /assets
 - /img
 - header.html
@@ -31,9 +36,9 @@
         <a href="">FOTOS</a>
         <a href="">ACOMODAÇÕES</a>
         <a href="">LOCALIZAÇÃO</a>
-        <a href="">AVALIÇÕES</a>
+        <a href="">AVALIAÇÕES</a>
         <a href="">EXPLORE</a>
-    </div><!--menu-container-->    
+    </div><!--menu-container-->
     </div>
     <div class="btn">
         <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#ffffff;;">ENTRAR</b></a></div>
@@ -58,7 +63,7 @@
 <div class="extras" id="c6">
 </div>
 <div class="extras" id="c7">
-</div>    
+</div>
 <div class="extras" id="q2">
 </div>
 
@@ -104,23 +109,28 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
  </body>
-``` 
+```
+
 ### Instruções de acesso
 
-Fazer a tradução da pagina em um dos três idiomas disponíveis, acessar as redes sociais da empresa através de links rápidos disponivel na lateral do site. 
+Fazer a tradução da pagina em um dos três idiomas disponíveis, acessar as redes sociais da empresa através de links rápidos disponivel na lateral do site.
 http://127.0.0.1:5500/homehostel.html
 
 ## Reservas (RF-010) e (RF-019)
+
 ### Desenvolvedor(a): Gabrielle Oliveira Santana
-- Funcionalidade de reservas 
+
+- Funcionalidade de reservas
 
 ![imagemReservas](https://user-images.githubusercontent.com/95951195/200965439-c4cf5e98-0fc6-40a0-8c3e-27051d7e9b09.png)
 
 ### Requisito atendido:
+
 - RF-010 - O sistema deve permitir a inclusão, alteração, remoção ou flexibilização em relação ao consumo do hóspede, mudança de datas/hospedagens ou cancelamento de pacotes, mesmo após aprovação da reserva
-- RF-019 - O sistema deve permitir o cancelamento de reservas	
+- RF-019 - O sistema deve permitir o cancelamento de reservas
 
 ### Artefatos da funcionalidade:
+
 - /assets
 - /img
 - header.html
@@ -128,62 +138,64 @@ http://127.0.0.1:5500/homehostel.html
 - ReservasHostel.html
 
 ```js
-    const ano = document.getElementById("ano");
-    const anoAtual = new Date();
-    
+const ano = document.getElementById("ano");
+const anoAtual = new Date();
 ```
 
 ```js
-// Definindo o valor 
-    // Caso não tenho vai zerar
-    if (localStorage.pessoas) {
-      document.getElementById('pessoas').value = localStorage.pessoas;
-    }
-    if (localStorage.dataInicio) {
-      document.getElementById('dataInicio').value = localStorage.dataInicio;
-    }
-    if (localStorage.dataFinal) {
-      document.getElementById('dataFinal').value = localStorage.dataFinal;
-    }
+// Definindo o valor
+// Caso não tenho vai zerar
+if (localStorage.pessoas) {
+  document.getElementById("pessoas").value = localStorage.pessoas;
+}
+if (localStorage.dataInicio) {
+  document.getElementById("dataInicio").value = localStorage.dataInicio;
+}
+if (localStorage.dataFinal) {
+  document.getElementById("dataFinal").value = localStorage.dataFinal;
+}
 
-    // Salvando no localStorage
-    var salvarData = function () {
-      var pessoas = document.getElementById('pessoas').value;
-      var dataInicio = document.getElementById('dataInicio').value;
-      var dataFinal = document.getElementById('dataFinal').value;
-      // console.log(pessoas + dataInicio + dataFinal);
+// Salvando no localStorage
+var salvarData = function () {
+  var pessoas = document.getElementById("pessoas").value;
+  var dataInicio = document.getElementById("dataInicio").value;
+  var dataFinal = document.getElementById("dataFinal").value;
+  // console.log(pessoas + dataInicio + dataFinal);
 
-      localStorage.setItem('pessoas', pessoas);
-      localStorage.setItem('dataInicio', dataInicio);
-      localStorage.setItem('dataFinal', dataFinal);
-    }
-    // Ativando o função quando houver alteração no documento
-    document.onchange = salvarData;
+  localStorage.setItem("pessoas", pessoas);
+  localStorage.setItem("dataInicio", dataInicio);
+  localStorage.setItem("dataFinal", dataFinal);
+};
+// Ativando o função quando houver alteração no documento
+document.onchange = salvarData;
 
-    // Botão limpar
-    if (clear) {
-      localStorage.clear();
-    }
+// Botão limpar
+if (clear) {
+  localStorage.clear();
+}
 
-    console.log(localStorage.dataFinal);
-    
+console.log(localStorage.dataFinal);
 ```
+
 ### Instruções de acesso
 
 No uso da reservas o hóspede deve inserir o número de pessoas que desejam se hospedar no hostel, o início e fim da estadia no hotel. Além de ter a disponibilidade de cancelamento das reservas.
 http://127.0.0.1:5502/ReservasHostel.html
 
-
 ## Login (RF-015)
+
 ### Desenvolvedor(a): Saory Nayara Vieira Nakabori
+
 - Tela de Login ao site
 
 ![image](https://user-images.githubusercontent.com/97962041/200976344-2e26a68f-d97b-4ae0-bb9d-365d55b8a4bb.png)
 
 ### Requisito atendido:
-- RF-015 - 	O cadastro de novos usuários, será validado através de um e-mail de confirmação;
+
+- RF-015 - O cadastro de novos usuários, será validado através de um e-mail de confirmação;
 
 ### Artefatos da funcionalidade:
+
 - /assets
 - index.html
 - style.css
@@ -200,16 +212,16 @@ http://127.0.0.1:5502/ReservasHostel.html
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  <title>Hostal El Alebrije</title>
 <style>
-    
+
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
     background-color: rgb(252, 252, 252);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-  
+
  </style>
 
  </head>
@@ -227,9 +239,9 @@ body{
         <a href="">FOTOS</a>
         <a href="">ACOMODAÇÕES</a>
         <a href="">LOCALIZAÇÃO</a>
-        <a href="">AVALIÇÕES</a>
+        <a href="">AVALIAÇÕES</a>
         <a href="">EXPLORE</a>
-    </div><!--menu-container-->    
+    </div><!--menu-container-->
     </div>
     <div class="btn">
         <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#9e2fba;;">ENTRAR</b></a></div>
@@ -254,7 +266,7 @@ body{
         <div class="wrap-login">
             <form class="login-form">
                 <span class="login-form-title">
-                 Entrar 
+                 Entrar
                 </span>
 
                 <div class="wrap-input margin-top-50 margin-bottom-35">
@@ -279,7 +291,7 @@ body{
                     <a href="#" class="text2">
                         senha?
                     </a>
-                  </li> 
+                  </li>
                   <li>
                     <span class="text1">
                         Não tem uma conta?
@@ -287,7 +299,7 @@ body{
                     <a href="#" class="text2">
                         Cadastre-se
                     </a>
-                  </li> 
+                  </li>
                 </ul>
             </form>
         </div>
@@ -341,25 +353,28 @@ body{
 
 </body>
 </html>
-    
+
 ```
 
 ### Instruções de acesso
 
-Login de acesso a aba reservas. 
+Login de acesso a aba reservas.
 http://127.0.0.1:5502/index.html
 
-
 ## Criar um Usuário (RNF-08)
+
 ### Desenvolvedor(a): Saory Nayara Vieira Nakabori
+
 - Tela de criar um usuário
 
 ![image](https://user-images.githubusercontent.com/97962041/200977648-c3393853-0557-4bdc-a70a-72f48686a4c7.png)
 
 ### Requisito atendido:
-- RNF-08 - 	O site deve possuir senhas de acesso e identificação para diferentes tipos de usuários: administrador do sistema, funcionários do hostel e clientes que têm acesso ao sistema no hostel;
+
+- RNF-08 - O site deve possuir senhas de acesso e identificação para diferentes tipos de usuários: administrador do sistema, funcionários do hostel e clientes que têm acesso ao sistema no hostel;
 
 ### Artefatos da funcionalidade:
+
 - /assets
 - index.html
 - style.css
@@ -382,18 +397,18 @@ http://127.0.0.1:5502/index.html
     <title>Formulário Criar uma Conta</title>
   </head>
   <style>
-    
+
     body{
-        overflow-x: hidden; 
+        overflow-x: hidden;
         background-color: rgb(252, 252, 252);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-      
+
      </style>
-    
+
      </head>
      <body>
     <header>
@@ -409,25 +424,25 @@ http://127.0.0.1:5502/index.html
             <a href="">FOTOS</a>
             <a href="">ACOMODAÇÕES</a>
             <a href="">LOCALIZAÇÃO</a>
-            <a href="">AVALIÇÕES</a>
+            <a href="">AVALIAÇÕES</a>
             <a href="">EXPLORE</a>
-        </div><!--menu-container-->    
+        </div><!--menu-container-->
         </div>
         <div class="btn">
             <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#9e2fba;;">ENTRAR</b></a></div>
             <button class="btn-cad"style="font-size: 12px;"><b><a href=" " style="color:#9e2fba;">CADASTRAR</b></a></div>
         </div>
-    
+
     </header>
-    
+
     <div class="translate">
         <a href=""><img src="assets/Br.jpg"/></a>
     </div>
-    
+
     <div class="translate1">
         <a href=""><img src="assets/esp.png"/></a>
     </div>
-    
+
     <div class="translate2">
         <a href=""><img src="assets/us.png"/></a>
     </div>
@@ -532,20 +547,23 @@ http://127.0.0.1:5502/index.html
 
 ### Instruções de acesso
 
-Criar um conta para realizar as reservas 
+Criar um conta para realizar as reservas
 http://127.0.0.1:5500/index.html
 
-
 ## Avaliações (RF-20)
+
 ### Desenvolvedor(a): Saory Nayara Vieira Nakabori
+
 - Tela de avaliações
 
 ![image](https://user-images.githubusercontent.com/97962041/200978294-a752c5d7-e52a-4e01-969b-f8450657feb4.png)
 
 ### Requisito atendido:
-- RF-20 - 	O sistema deve permitir uma aba para “Reclamações e Denúncias Anônimas”, para casos de preconceitos raciais ou demais crimes e situações adversas, ocorridas durante a hospedagem;
+
+- RF-20 - O sistema deve permitir uma aba para “Reclamações e Denúncias Anônimas”, para casos de preconceitos raciais ou demais crimes e situações adversas, ocorridas durante a hospedagem;
 
 ### Artefatos da funcionalidade:
+
 - /assets
 - index.html
 - style.css
@@ -562,16 +580,16 @@ http://127.0.0.1:5500/index.html
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
  <title>Hostal El Alebrije</title>
 <style>
-    
+
 body{
-    overflow-x: hidden; 
+    overflow-x: hidden;
     background-color: rgb(252, 252, 252);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-  
+
  </style>
 
  </head>
@@ -589,9 +607,9 @@ body{
         <a href="">FOTOS</a>
         <a href="">ACOMODAÇÕES</a>
         <a href="">LOCALIZAÇÃO</a>
-        <a class="active-menu" href="">AVALIÇÕES</a>
+        <a class="active-menu" href="">AVALIAÇÕES</a>
         <a href="">EXPLORE</a>
-    </div><!--menu-container-->    
+    </div><!--menu-container-->
     </div>
     <div class="btn">
         <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#9e2fba;;">ENTRAR</b></a></div>
@@ -611,9 +629,9 @@ body{
 <div class="translate2">
     <a href=""><img src="assets/us.png"/></a>
 </div>
-<!--fim do header-->  
+<!--fim do header-->
 
-<!--inicio do quadro cinza-->  
+<!--inicio do quadro cinza-->
 <body>
     <div class="all" >
       <aside>
@@ -644,9 +662,9 @@ body{
           </li>
         </ul>
       </aside>
-<!--fim do quadro cinza-->  
+<!--fim do quadro cinza-->
 
-<!--formulario-->  
+<!--formulario-->
 <div class="formulario">
     <h1 id="titulo-avaliacoes"><strong>Avaliações</strong></h1>
     <p id="subtitulo-avaliacoes">Escreva abaixo o seu comentário</p>
@@ -664,10 +682,10 @@ body{
         <button class="botão-publicar" type="submit"><strong>Publicar</strong></button>
 </form>
 
-<!--formulario-->     
+<!--formulario-->
 
 
-<!--inicio do footer-->  
+<!--inicio do footer-->
 <div class="footer">
     <div style="display: flex; margin-left: 1rem; align-items:
         center">
@@ -704,20 +722,24 @@ body{
 ```
 
 ### Instruções de acesso
+
 Página para digitar as avaliações sobre o hotel.
 http://127.0.0.1:5501/index.html
 
-
 ## Avaliações - O que os hóspedes dizem (RF-06)
+
 ### Desenvolvedor(a): Fernanda Marques Assis
+
 - Avaliações - O que os hóspedes dizem
 
 ![image](https://user-images.githubusercontent.com/97962041/200979268-8271ec0f-be29-4a28-a59a-0b9dff69db08.png)
 
 ### Requisito atendido:
-- RF-06 - 	O sistema deve possuir uma área de feedback e dicas de antigos hóspedes para orientação de estrangeiros, a fim de que o hóspede saiba o que vale a pena investir ou não e tenha uma boa estadia.
+
+- RF-06 - O sistema deve possuir uma área de feedback e dicas de antigos hóspedes para orientação de estrangeiros, a fim de que o hóspede saiba o que vale a pena investir ou não e tenha uma boa estadia.
 
 ### Artefatos da funcionalidade:
+
 - avaliacao.html
 - avaliacao.png
 - assets
@@ -763,7 +785,7 @@ http://127.0.0.1:5501/index.html
                 <a href="">FOTOS</a>
                 <a href="">ACOMODAÇÕES</a>
                 <a href="">LOCALIZAÇÃO</a>
-                <a href="">AVALIÇÕES</a>
+                <a href="">AVALIAÇÕES</a>
                 <a href="">EXPLORE</a>
             </div><!--menu-container-->
             </div>
@@ -902,20 +924,24 @@ http://127.0.0.1:5501/index.html
 ```
 
 ### Instruções de acesso
+
 Página para visualizar as avaliações dos clientes sobre o hotel.
 http://127.0.0.1:5500/Avaliacao.html
 
-
 ## Localizações (RF-17)
+
 ### Desenvolvedor(a): Fernanda Marques Assis
+
 - Página de localizações
 
 ![image](https://user-images.githubusercontent.com/97962041/200979787-1832030b-c935-4bf1-800e-60cb1b60b588.png)
 
 ### Requisito atendido:
+
 - RF-17 - O site deverá apresentar links redirecionando às outras redes da empresa, como: Instagram, Youtube, Facebook e afins;
 
 ### Artefatos da funcionalidade:
+
 - localizacao.html
 - localizacao.png
 - assets
@@ -962,7 +988,7 @@ http://127.0.0.1:5500/Avaliacao.html
           <a href="">FOTOS</a>
           <a href="">ACOMODAÇÕES</a>
           <a href="">LOCALIZAÇÃO</a>
-          <a href="">AVALIÇÕES</a>
+          <a href="">AVALIAÇÕES</a>
           <a href="">EXPLORE</a>
       </div><!--menu-container-->
       </div>
@@ -1064,22 +1090,25 @@ http://127.0.0.1:5500/Avaliacao.html
 ```
 
 ### Instruções de acesso
+
 Página para visualizar as localizações;
 http://127.0.0.1:5500/Localizacao.html
 
-
 ## Localizações (RF-03)
+
 ### Desenvolvedor(a): Fernanda Marques Assis
+
 - Página do Explore
 
 ![image](https://user-images.githubusercontent.com/97962041/200980326-657edb0d-0e1d-43be-bb4b-090f16d04220.png)
 ![image](https://user-images.githubusercontent.com/97962041/200980768-d5d1c7a3-0dc3-45ac-8dbc-80df25a64db2.png)
 
-
 ### Requisito atendido:
+
 - RF-03 - Disponibilizar para o cliente todos os atrativos da região com descrições de cada atividade e com uma opção do hóspede se inscrever para participar das atividades dentro e fora do hostel;
 
 ### Artefatos da funcionalidade:
+
 - explore.html
 - explore.png
 - exploreview.html
@@ -1123,7 +1152,7 @@ http://127.0.0.1:5500/Localizacao.html
           <a href="">FOTOS</a>
           <a href="">ACOMODAÇÕES</a>
           <a href="">LOCALIZAÇÃO</a>
-          <a href="">AVALIÇÕES</a>
+          <a href="">AVALIAÇÕES</a>
           <a href="">EXPLORE</a>
       </div><!--menu-container-->
       </div>
@@ -1335,7 +1364,7 @@ http://127.0.0.1:5500/Localizacao.html
           <a href="">FOTOS</a>
           <a href="">ACOMODAÇÕES</a>
           <a href="">LOCALIZAÇÃO</a>
-          <a href="">AVALIÇÕES</a>
+          <a href="">AVALIAÇÕES</a>
           <a href="">EXPLORE</a>
       </div><!--menu-container-->
       </div>
@@ -1480,24 +1509,26 @@ http://127.0.0.1:5500/Localizacao.html
 ```
 
 ### Instruções de acesso
+
 Página para visualizar as atrações turísticas;
 http://127.0.0.1:5500/ExploreView.html
 http://127.0.0.1:5500/Explore.html
 
-
 ## Revise suas Acomodações (RF-05 e RF-02)
+
 ### Desenvolvedor(a): Gabriella Bradley Cusnir
+
 - Página Revise suas Acomodações
 
 ![image](https://user-images.githubusercontent.com/97962041/200981786-08045993-970a-4303-9c6d-11556b2e525e.png)
 
-
 ### Requisito atendido:
-- RF-05 - O sistema deve permitir ao hóspede imprimir um histórico de suas estadias no hostel, agilizando o processo de hospedagem pelo cadastro já ter sido previamente feito;
-- RF-02 - Um serviço de disponibilidade de camas e quartos, para que o cliente possa escolher a cama e o quarto que deseja e não ocorra reservas acima da capacidade do hostel. 
 
+- RF-05 - O sistema deve permitir ao hóspede imprimir um histórico de suas estadias no hostel, agilizando o processo de hospedagem pelo cadastro já ter sido previamente feito;
+- RF-02 - Um serviço de disponibilidade de camas e quartos, para que o cliente possa escolher a cama e o quarto que deseja e não ocorra reservas acima da capacidade do hostel.
 
 ### Artefatos da funcionalidade:
+
 - explore.html
 - explore.png
 - exploreview.html
@@ -1529,9 +1560,9 @@ http://127.0.0.1:5500/Explore.html
                             <a href="">FOTOS</a>
                             <a href="">ACOMODAÇÕES</a>
                             <a href="">LOCALIZAÇÃO</a>
-                            <a href="">AVALIÇÕES</a>
+                            <a href="">AVALIAÇÕES</a>
                             <a href="">EXPLORE</a>
-                        </div><!--menu-container-->    
+                        </div><!--menu-container-->
                 </div>
                 <div class="btn">
                     <button class="btn-enter" style="font-size: 20px;"><b><a href=" " style="color:#9e2fba;;">ENTRAR</b></a></div>
@@ -1766,22 +1797,25 @@ http://127.0.0.1:5500/Explore.html
 ```
 
 ### Instruções de acesso
+
 Página para revisar as escolhas de acomodações;
 http://127.0.0.1:5500/pmv-ads-2022-2-e1-proj-web-t5-hostel-el-alebrije/index.html
 
-
 ## Reservas (RF-010) e (RF-019)
+
 ### Desenvolvedor(a): Geovanne Marco Correa da Silva
+
 - Galeria de Imagens
 
 ![FOTOS](https://user-images.githubusercontent.com/114536934/200992833-dd0ab348-7042-4151-b6c4-82f41f39e620.jpg)
 
-
 ### Requisito atendido:
+
 - RF-08 - O site deverá conter uma imagem correspondente para as diferenças de acomodações e demais serviços prestados aos hóspedes.
 - RF-014 - A interface gráfica deve ser de fácil entendimento e o usuário deve conseguir usar com facilidade;
 
 ### Artefatos da funcionalidade:
+
 - header.html
 - style.css
 - função.js
@@ -1791,7 +1825,7 @@ http://127.0.0.1:5500/pmv-ads-2022-2-e1-proj-web-t5-hostel-el-alebrije/index.htm
 ```js
     Function (){}
       document.getElementById
-   
+
 ```
 
 ```js
@@ -1832,8 +1866,9 @@ function img12 (){
     document.getElementById("trocarimg").src="trocaimg12.jpg";
 }
 
-    
+
 ```
+
 ### Instruções de acesso
 
 O cliende deverá clicar nas imagens desejadas, assim, podendo vizualiza-las de forma ampliada e em sua qualidade máxima.
