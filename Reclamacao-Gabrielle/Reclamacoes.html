@@ -5,197 +5,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="../css/header_style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/global.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <!-- <link href="Reclamacoes-style.css" rel="stylesheet" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="Reclamacoes-style.css" rel="stylesheet" />
     <title>Hostal El Alebrije</title>
-
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: rgb(252, 252, 252);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
 
 </head>
 
 <body>
-<!--  Inicio header    -->
-    <header style="background: #9e2fba; color: #eeecee">
+    <!-- Inicio do header -->
+    <header>
         <div class="center">
-            <a href="../index.html" >
-            <div>
-                <img src="../assets/hostal.png"  width="103" />
+            <div class="logo">
+                <h3><img src="assets/hostal.png" width="103">
             </div>
-        </a>
             <!--center-->
             <div class="hostal">
                 <h3 style="font-size: 14px;"><i>&nbsp;&nbsp; Hostal<p><b>El Alebrije</b></i></h3>
                 </p>
             </div>
             <!--hostal-->
-
             <div class="menu-container">
-                <a href="" target="_self">SOBRE</a>
-                <a href="" target="_self">FOTOS</a>
-                <a href="" target="_self">ACOMODAÇÕES</a>
-                <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
-                <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
-                <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
+                <a href="">SOBRE</a>
+                <a href="">FOTOS</a>
+                <a href="">ACOMODAÇÕES</a>
+                <a href="">LOCALIZAÇÃO</a>
+                <a class="active-menu" href="">AVALIÇÕES</a>
+                <a href="">EXPLORE</a>
             </div>
             <!--menu-container-->
         </div>
-        <div class="translate">
-            <div id="google_translate_element" class="boxTradutor"></div>
-            <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
-                    margin="35px 0;"></a>
-        </div>
-        <div class="translate1">
-            <div id="google_translate_element" class="boxTradutor"></div>
-            <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
-                    margin="35px 0;"></a>
-        </div>
-        <div class="translate2">
-            <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
-                    margin="35px 0;"></a>
-        </div>
-
-        <button class="btn-res" style="font-size: 20px; margin-top: 0.3rem;"><a
-                href="../acomodacao.html">Reserve&nbsp;agora </a>
-        </button>
-
         <div class="btn">
-            <button class="btn-enter"><b><a href="../Login/index.html">ENTRAR</b></a>
+            <button class="btn-enter" style="font-size: 20px;"><b><a href="./login/index.html " style="color:#9e2fba;;">ENTRAR</b></a>
         </div>
-        <button class="btn-cad" style="font-size: 12px; margin-top: 0.3rem;"><b><a
-                    href="../CriarUmaConta/index.html">CADASTRAR</b></a></div>
-
+        <button class="btn-cad" style="font-size: 12px;"><b><a href="https://github.com/santanagabi/hostel/blob/main/Reclama%C3%A7%C3%B5es-Atualizadas-Gabrielle/index.html " style="color:#9e2fba;">CADASTRAR</b></a>
+        </button>
+        <div class="idiomas">
+            <div class="translate">
+                <a href=""><img src="assets/Br.jpg" /></a>
             </div>
-    </header>
-<!--  Final header    -->
-    
-<!-- Começo aside (lista dados cinza)     -->
-    <div class="container">
-        <div class="row" style="display:flex; align-items:center; margin-top: 50px">
 
-            <div class="col-md-6" style="display: flex; flex-direction: column;">
-                <div class="list-group-item-dados-pessoais">
-                    <div class="list-group-item-dados">
-                        <img class="item-img" src="../DadosPessoais/assets/dados-pessoais.svg" alt="">
-                        <span class="infos">Dados pessoais</span>
-                    </div>
-                    <div class="list-group-item-dados">
-                        <img class="item-img" src="../DadosPessoais/assets/reservas.svg" alt="">
-                        <span class="infos">Reservas</span>
-                    </div>
-                    <div class="list-group-item-dados">
-                        <img class="item-img" src="../DadosPessoais/assets/avaliacoes.svg" alt="">
-                        <span class="infos">Avaliações</span>
-                    </div>
-<!--                     <div class="list-group-item-dados">
-                        <img class="item-img" src="../DadosPessoais/assets/reclamacoes.svg" alt="">
-                        <span class="infos">Reclamações(Anônimas)</span>
-                    </div> -->
+            <div class="translate1">
+                <a href=""><img src="assets/esp.png" /></a>
+            </div>
+
+            <div class="translate2">
+                <a href=""><img src="assets/us.png" /></a>
+            </div>
+        </div>
+    </header>
+    <!--fim do header-->
+
+    <!-- Reclamação do Hostel -->
+    <!--inicio do quadro cinza-->
+    <div class="all">
+        <aside>
+            <ul class="list-group-teste">
+                <li class="list-group-item-dados-pessoais">
+                    <img src="assets/dados-pessoais.svg" alt="">
+                    <a href="">Dados pessoais</a>
+                </li>
+                <li class="list-group-item-reservas">
+                    <img src="assets/reservas.svg" alt="">
+                    <a href="">Reservas</a>
+                </li>
+                <li class="list-group-item-avaliacoes">
+                    <img src="assets/avaliacoes.svg" alt="">
+                    <a href="">Avaliações</a>
+                </li>
+                <li class="list-group-item-reclamacoes">
+                    <img src="assets/reclamacoes.svg" alt="">
+                    <a href="">Reclamações(Anônimas)</a>
+                </li>
+                <li class="list-group-item-dados-pagamento">
+                    <img src="assets/dados-pagamento.svg" alt="">
+                    <a href=""> Dados de pagamentos</a>
+                </li>
+                <li class="list-group-item-seguranca">
+                    <img src="assets/seguranca.svg" alt="">
+                    <a href="">Segurança</a>
+                </li>
+            </ul>
+        </aside>
+        <!--fim do quadro cinza-->
+
+        <!--formulario-->
+        <form action="">
+            <div class="container" style="display:flex; flex-direction: column;">
+                <div class="header">
+                    <h2>Reclamações</h2>
+                    <p>Faça sua reclamação aqui </p>
                 </div>
             </div>
-<!--             Inicio reclamações -->
-            <div class="box col-md-6">
-                <legend><b>Reclamações</b></legend>
-                <span id="subtitulo-avaliacoes">Faça sua reclamação aqui </span>
+            <form id="form" class="form">
+                <div class="formularios">
+                    <label for="username">Primeiro Nome:</label>
+                    <input type="text" class="username" id="username" placeholder="Digite seu nome de usuário..." />
+                </div>
 
-                <form id="form" class="form">
-                    <div class="formularios">
-                        <label for="username" style="margin-top: 1.1rem; font-size: 1.5rem">Primeiro Nome:</label>
-                        <input type="text" class="username" id="username" placeholder="Digite seu nome de usuário..." style="margin-top: 0.8rem; padding: 0.7rem; border-radius: 8px; width: 100%;"/>
-                    </div>
+                <div class="formularios">
+                    <label for="lastname">Sobrenome:</label>
+                    <input type="text" class="lastname" id="lastname" placeholder="Digite seu sobrenome..." />
+                </div>
 
-                    <div class="formularios">
-                        <label for="lastname" style="margin-top: 1.1rem; font-size: 1.5rem">Sobrenome:</label>
-                        <input type="text" class="lastname" id="lastname" placeholder="Digite seu sobrenome..." style="margin-top: 0.8rem; padding: 0.7rem; border-radius: 8px; width: 100%;"/>
-                    </div>
+                <div class="formularios">
+                    <label for="faca-reclamacao">Faça sua reclamação:
+                    </label>
+                    <input type="text" class="faca-reclamacao" id="faca-reclamacao" placeholder="Digite sua reclamação aqui..." style="width:500px ; height: 150px;" />
+                </div>
+                <button onclick="Enviado()" type=" submit" style="background-color: rgb(201, 9, 201); margin-top:10px; margin-left:60px; display:flex; justify-content:center; border-radius:16px; color: black; ">Enviar</button>
+            </form>
+            <!-- JS Reclamações -->
+            <script>
+                // form.addEventListener("submit", (e) => {
+                //     e.preventDefault();
 
-                    <div class="formularios">
-                        <label for="faca-reclamacao" style="margin-top: 1.1rem; font-size: 1.5rem">Faça sua reclamação:
-                        </label>
-                        <textarea class="comentario" row="20" id="faca-reclamacao" name="faca-reclamacao[]" value="faca-reclamacao"
-                                style="width:540px; height: 200px;border-radius: 8px; margin-top: 0.8rem; padding: 0.7rem;" placeholder="Digite sua reclamação aqui..."></textarea>
+                //     checkInputs();
+                // });
 
-                    </div>
-                    <button onclick="Enviado()" type=" submit" class="botão-publicar">Enviar</button>
-                </form>
-            </div>
+                // function Enviado(input) {
+                //     alert('Foi enviado para os administradores do hotel com sucesso!');
+                // }
+
+                // btn.addEventListener("submit", function () {
+                //     alert('Enviado com sucesso!');
+                // });
+
+                // Salvando no localStorage
+                var salvandoDados = function () {
+                    // var form = document.querySelector('.form').value;
+                    var username = document.querySelector('.username').value;
+                    var lastname = document.querySelector('.lastname').value;
+                    var facaReclamacao = document.querySelector('.faca-reclamacao').value;
+
+                    // localStorage.setItem('form', form);
+                    localStorage.setItem('username', username);
+                    localStorage.setItem('lastname', lastname);
+                    localStorage.setItem('facaReclamacao', facaReclamacao);
+
+                }
+                console.log(username)
+                // Ativando o função quando houver alteração no documento
+                document.onchange = salvandoDados;
+
+            </script>
+
+            <!-- Estilo Reclamações -->
+            <style>
+                label,
+                input {
+                    background: #f1e2f6;
+                }
+            </style>
+
+
+            <!--formulario-->
+
+
+    </div>
+
+    <!--inicio do footer-->
+    <div class="footer">
+        <div style="display: flex; margin-left: 1rem; align-items:
+        center">
+            <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
+                <img src="assets/fb.svg" alt="facebook" />
+            </a>
+            <a href="https://instagram.com/alebrije_hostaal?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
+                <img src="assets/insta.svg" alt="insta" />
+            </a>
+            <a href="https://www.booking.com/hotel/mx/hostal-el-alebrije.en-gb.html" target="_blank" rel="noopener">
+                <img src="assets/booking.svg" alt="bookin" />
+            </a>
         </div>
-        
-<!--  Inicio do footer        -->
-        <div class="footer">
-            <div style="display: flex; margin-left: 1rem; align-items:
-                        center">
-                <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
-                    <img class="footer-img" src="../assets/fb.svg" alt="facebook" />
-                </a>
-                <a href="https://instagram.com/alebrije_hostaal?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
-                    <img class="footer-img" src="../assets/insta.svg" alt="insta" />
-                </a>
-                <a href="https://www.booking.com/hotel/mx/hostal-el-alebrije.en-gb.html" target="_blank" rel="noopener">
-                    <img class="footer-img" src="../assets/booking.svg" alt="bookin" />
-                </a>
-            </div>
-            <span class="text-copyright">&#169 ElAlebrije <span id="ano">2022</span> - Todos os direitos
-                reservados</span>
-            <div className="footerSide">
-                <a href="https://api.whatsapp.com/send?phone=5217223960938" target="_blank" rel="noopener">
-                    <img class="footer-img" src="../assets/wpp.svg" alt="whatsapp" />
-                </a>
-            </div>
+        <span class="text-copyright">&#169 ElAlebrije <span id="ano">2022</span> - Todos os direitos
+            reservados</span>
+        <div className="footerSide">
+            <a href="https://api.whatsapp.com/send?phone=5217223960938" target="_blank" rel="noopener">
+                <img src="assets/wpp.svg" alt="whatsapp" />
+            </a>
         </div>
     </div>
-    <script type="text/javascript"
-        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-<!-- Javascript -->
-    <script>
-        // form.addEventListener("submit", (e) => {
-        //     e.preventDefault();
-
-        //     checkInputs();
-        // });
-
-        // function Enviado(input) {
-        //     alert('Foi enviado para os administradores do hotel com sucesso!');
-        // }
-
-        // btn.addEventListener("submit", function () {
-        //     alert('Enviado com sucesso!');
-        // });
-
-        // Salvando no localStorage
-        var salvandoDados = function () {
-            // var form = document.querySelector('.form').value;
-            var username = document.querySelector('.username').value;
-            var lastname = document.querySelector('.lastname').value;
-            var facaReclamacao = document.querySelector('.faca-reclamacao').value;
-
-            // localStorage.setItem('form', form);
-            localStorage.setItem('username', username);
-            localStorage.setItem('lastname', lastname);
-            localStorage.setItem('facaReclamacao', facaReclamacao);
-
-        }
-        console.log(username)
-        // Ativando o função quando houver alteração no documento
-        document.onchange = salvandoDados;
-
-    </script>
 </body>
 
 </html>
