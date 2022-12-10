@@ -38,6 +38,7 @@ function guardarNumeros() {
 saveModification.addEventListener("click", (e) => {
   e.preventDefault();
   guardarNumeros();
+  window.location.href = "../index.html";
   alert("Dados salvos com sucesso!");
 });
 getInfoClient();

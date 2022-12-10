@@ -5,33 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="./assets/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
     <link rel="stylesheet" type="text/css" href="../css/header_style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <title>Hostal El Alebrije</title>
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            overflow-x: hidden;
-            background-color: rgb(252, 252, 252);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            min-height: 150vh;
-        }
 
-    </style>
 </head>
 
 <body>
-    <header>
+    <header style="background: #9e2fba; color: #eeecee">
         <div class="center">
-            <div class="logo">
-                <h3><img src="assets/hostal.png" width="103">
+            <div class="logo" style="margin-top:-1rem">
+                <h3><img src="../assets/hostal.png" width="103">
             </div>
             <!--center-->
             <div class="hostal">
@@ -39,144 +33,155 @@
                 </p>
             </div>
             <!--hostal-->
+
             <div class="menu-container">
-                <a class="active-menu" href="sobre.html">SOBRE</a>
-                <a href="fotos.html">FOTOS</a>
-                <a href="">ACOMODAÇÕES</a>
-                <a href="../PaginasLocalizacao/Localizacao.html">LOCALIZAÇÃO</a>
-                <a href="../ReviseDados/AvaliacaoPublicacao.html">AVALIAÇÕES</a>
-                <a href="../PaginaExplore/Explore.html">EXPLORE</a>
+                <a href="" target="_self">SOBRE</a>
+                <a href="" target="_self">FOTOS</a>
+                <a href="" target="_self">ACOMODAÇÕES</a>
+                <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
+                <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
+                <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
             </div>
+            <!--menu-container-->
         </div>
-        <button class="btn-res" style="margin-top: 0.1rem;"><a href="../acomodacao.html"
-                style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
+        <div class="translate">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+        <div class="translate1">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+        <div class="translate2">
+            <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+
+        <button class="btn-res" style="font-size: 20px; margin-top: 0.3rem;"><a
+                href="../acomodacao.html">Reserve&nbsp;agora
+            </a>
         </button>
+
         <div class="btn">
-            <button class="btn-enter" style="font-size: 20px;"><b><a href="../Login/index.html"
-                        style="color:#9e2fba;;">ENTRAR</b></a>
+            <button class="btn-enter"><b><a href="../Login/index.html">ENTRAR</b></a>
         </div>
-        <button class="btn-cad" style="font-size: 12px;"><b><a href="../CriarUmaConta/index.html"
-                    style="color:#9e2fba;">CADASTRAR</b></a></div>
-            </div>
+        <button class="btn-cad" style="font-size: 12px; margin-top: 0.3rem;"><b><a
+                    href="../CriarUmaConta/index.html">CADASTRAR</b></a></div>
+
             </div>
     </header>
 
-    <div class="translate">
-        <a href=""><img src="assets/Br.jpg" /></a>
-    </div>
-
-    <div class="translate1">
-        <a href=""><img src="assets/esp.png" /></a>
-    </div>
-
-    <div class="translate2">
-        <a href=""><img src="assets/us.png" /></a>
-    </div>
-    <div class="formulario">
-        <h1 id="titulo-dados-pessoais">Dados Pessoais</h1>
-    </div>
-
-    <!--inicio do quadro cinza-->
-
     <body>
         <div class="container">
-            <aside>
-                <ul class="list-group-teste">
-                    <li class="list-group-item-dados-pessoais">
-                        <img src="assets/dados-pessoais.svg" alt="">
-                        Dados pessoais
-                    </li>
-                    <li class="list-group-item-reservas">
-                        <img src="assets/reservas.svg" alt="">
-                        Reservas
-                    </li>
-                    <li class="list-group-item-avaliacoes">
-                        <img src="assets/avaliacoes.svg" alt="">
-                        Avaliações
-                    </li>
-                    <li class="list-group-item-reclamacoes">
-                        <img src="assets/reclamacoes.svg" alt="">
-                        Reclamações(Anônimas)
-                    </li>
-                </ul>
-            </aside>
+            <div class="row" style="display:flex; align-items:center; margin-top: 50px">
+                <div class="col-md-6" style="display: flex; flex-direction: column;">
+                    <div class="list-group-item-dados-pessoais">
+                        <div class="list-group-item-dados">
+                            <img class="item-img" src="assets/dados-pessoais.svg" alt="">
+                            <span class="infos">Dados pessoais</span>
+                        </div>
+                        <div class="list-group-item-dados">
+                            <img class="item-img" src="assets/reservas.svg" alt="">
+                            <span class="infos">Reservas</span>
+                        </div>
+                        <div class="list-group-item-dados">
+                            <img class="item-img" src="assets/avaliacoes.svg" alt="">
+                            <span class="infos">Avaliações</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="max-width">
-                <div class="selecaoimagem">
-                    <img src="Assets/camera (1).png" alt="Selecione uma imagem" id="imgphoto">
+
+                <div style="display: flex; flex-direction: column; width: 500px">
+                    <div class="max-width">
+                        <img class="img-camera" src="Assets/camera (1).png" alt="Selecione uma imagem" id="imgphoto">
+
+                        <input style="display: none;" type="file" id="camera" name="camera" accept="image/*">
+                    </div>
+
+                    <div class="box col-md-12">
+                        <form action="" id="form">
+                            <fieldset style="padding: 1rem">
+                                <legend><b>Atualize as suas Informações</b></legend>
+                                <br>
+                                <div class="inputBox">
+                                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                                    <label for="nome" class="labelInput">Nome completo</label>
+                                </div>
+                                <br><br>
+                                <div class="inputBox">
+                                    <input type="text" name="email" class="inputUser" id="email" required>
+                                    <label for="email" class="labelInput">E-mail</label>
+                                </div>
+                                <br><br>
+                                <div class="inputBox">
+                                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                                    <label for="telefone" class="labelInput">Telefone</label>
+                                </div>
+                                <br><br>
+                                <p>Sexo</p>
+                                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                                <label for="feminino">Feminino</label>
+                                <br>
+                                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                                <label for="masculino">Masculino</label>
+                                <br>
+                                <input type="radio" id="outro" name="genero" value="outro" required>
+                                <label for="outro">Outro</label>
+                                <br><br>
+                                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                                <br><br><br>
+                                <div class="inputBox">
+                                    <input type="text" name="nacionalidade" class="inputUser" required>
+                                    <label for="nacionalidade" class="labelInput">Nacionalidade</label>
+                                </div>
+                                <br><br>
+                                <button type="submit" name="submit" id="submit">Salvar</button>
+                            </fieldset>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-            <input type="file" id="camera" name="camera" accept="image/*">
-
-            <script src="./script.js"></script>
-
-            <div class="box">
-                <form action="" id="form">
-                    <fieldset>
-                        <legend><b>Atualize as suas Informações</b></legend>
-                        <br>
-                        <div class="inputBox">
-                            <input type="text" name="nome" class="inputUser" required>
-                            <label for="nome" class="labelInput">Nome completo</label>
-                        </div>
-                        <br><br>
-                        <div class="inputBox">
-                            <input type="text" name="email" class="inputUser" required>
-                            <label for="email" class="labelInput">E-mail</label>
-                        </div>
-                        <br><br>
-                        <div class="inputBox">
-                            <input type="tel" name="telefone" class="inputUser" required>
-                            <label for="telefone" class="labelInput">Telefone</label>
-                        </div>
-                        <br><br>
-                        <p>Sexo</p>
-                        <input type="radio" id="feminino" name="genero" value="feminino" required>
-                        <label for="feminino">Feminino</label>
-                        <br>
-                        <input type="radio" id="masculino" name="genero" value="masculino" required>
-                        <label for="masculino">Masculino</label>
-                        <br>
-                        <input type="radio" id="outro" name="genero" value="outro" required>
-                        <label for="outro">Outro</label>
-                        <br><br>
-                        <label for="data_nascimento"><b>Data de Nascimento:</b></label>
-                        <input type="date" name="data_nascimento" id="data_nascimento" required>
-                        <br><br><br>
-                        <div class="inputBox">
-                            <input type="text" name="nacionalidade" class="inputUser" required>
-                            <label for="nacionalidade" class="labelInput">Nacionalidade</label>
-                        </div>
-                        <br><br>
-                        <button type="submit" name="submit" id="submit">Salvar</button>
-                    </fieldset>
-                </form>
-            </div>
-
             <div class="footer">
                 <div style="display: flex; margin-left: 1rem; align-items:
                 center">
                     <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
-                        <img class="footer-img" src="../assets/fb.svg" alt="facebook" />
+                        <img class="footer-img" src="../assets/fb.svg" alt="facebook">
                     </a>
                     <a href="https://instagram.com/alebrije_hostaal?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
-                        <img class="footer-img" src="../assets/insta.svg" alt="insta" />
+                        <img class="footer-img" src="../assets/insta.svg" alt="insta">
                     </a>
                     <a href="https://www.booking.com/hotel/mx/hostal-el-alebrije.en-gb.html" target="_blank"
                         rel="noopener">
-                        <img class="footer-img" src="../assets/booking.svg" alt="bookin" />
+                        <img class="footer-img" src="../assets/booking.svg" alt="bookin">
                     </a>
                 </div>
-                <span class="text-copyright">&#169 ElAlebrije <span id="ano">2022</span> - Todos os direitos
-                    reservados</span>
+                <span class="text-copyright">&#169 ElAlebrije
+                    <span id="ano">2022</span>
+                    - Todos os direitos
+                    reservados
+                </span>
                 <div className="footerSide">
-                    <a href="https://api.whatsapp.com/send?phone=5217223960938" target="_blank" rel="noopener">
-                        <img class="footer-img" src="../assets/wpp.svg" alt="whatsapp" />
+                    <a href="https://api.whatsapp.com/send?phone=5217223960938" targ class="footer-img"
+                        src="../assets/wpp.svg" alt="whatsapp">
                     </a>
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </body>
 
 </html>
