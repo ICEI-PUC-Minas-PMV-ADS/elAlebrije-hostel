@@ -138,49 +138,6 @@ header {
 }
 /*fim do header*/
 
-/*inicio do quadro cinza*/
-.list-group-item-dados-pessoais {
-  width: 500px;
-  height: 135px;
-  list-style: none;
-  padding: 2rem 1rem;
-  margin-top: 0.5rem;
-  margin-left: -20px;
-  background-color: lightgray;
-}
-
-.list-group-item-reservas {
-  width: 500px;
-  height: 135px;
-  display: block;
-  list-style: none;
-  padding: 2rem 1rem;
-  margin-top: 0.5rem;
-  margin-left: -20px;
-  background-color: lightgray;
-}
-
-.list-group-item-avaliacoes {
-  width: 500px;
-  height: 135px;
-  list-style: none;
-  padding: 2rem 1rem;
-  margin-top: 0.5rem;
-  margin-left: -20px;
-  background-color: lightgray;
-}
-
-.list-group-item-reclamacoes {
-  width: 500px;
-  height: 135px;
-  list-style: none;
-  padding: 2rem 1rem;
-  margin-top: 0.5rem;
-  margin-left: -20px;
-  background-color: lightgray;
-}
-/*fim do quadro cinza*/
-
 /*formulario*/
 #titulo-avaliacoes {
   font-family: "Poppins", sans-serif;
