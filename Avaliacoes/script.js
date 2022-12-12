@@ -13,6 +13,7 @@ const updateProvider = (provider) => {
   let dbProvider = readReview();
   dbProvider = provider;
   setSessionStorage(dbProvider);
+  window.location.href = "../ReviseDados/AvaliacaoPublicacao.html";
 };
 
 const getInfoClient = () => {
@@ -30,15 +31,16 @@ var items = [];
 
 function guardarNumeros() {
   boxvalue = { comentario: document.getElementById("comentario").value };
-  items.push(boxvalue);
-  updateProvider(items);
+  if (boxvalue) {
+    items.push(boxvalue);
+    updateProvider(items);
+    return items;
+  }
   return false; // stop submission
 }
 
 saveModification.addEventListener("click", (e) => {
   e.preventDefault();
   guardarNumeros();
-  window.location.href = "../index.html";
-  alert("Dados salvos com sucesso!");
 });
 getInfoClient();

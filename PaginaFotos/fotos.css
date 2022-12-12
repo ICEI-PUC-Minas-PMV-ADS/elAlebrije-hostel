@@ -1,297 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500;600;700&display=swap");
 
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-    margin: 0;
-}
-header {
-    display: flex;
-    align-items: center;
-    background-color: #9e2fba;
-    height: 110px;
-}
-.LOGO {
-    padding-left: 10px;
-}
-nav {
-    display: flex;
-    font-family: "Inter", sans-serif;
-}
-.navegação a {
-    display: flex;
-    text-decoration: none;
-    padding: 0px 28px 0px;
-}
-.nomehostel {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    position: fixed;
-    color: #ffffff;
-    padding-top: 5px;
-}
-.Hostel {
-    display: flex;
-    font-size: 15px;
-    padding-left: 14px;
-    font-family: 'Inter' sans-serif;
-    font-style: italic;
-    font-weight: 300;
-}
-.Elalebrije {
-    display: flex;
-    font-size: 17px;
-    padding-left: 15px;
-    font-family: 'Inter' sans-serif;
-    font-style: italic;
-    font-weight: 300;
-}
-.cabeçalhoselecionavel {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    font-size: 18px;
-    padding-left: 350px;
-    font-family: "Inter" sans-serif;
-    font-style: normal;
-    cursor: pointer;
-}
-.sobre {
-    display: flex;
-    color: #fFFFFF;
-    font-weight: 300;
-    cursor: pointer;
-}
 .fotos {
-    display: flex;
-    align-items: center;
-    height: 110px;
-    padding-top: 50px;
-    font-weight: 400;
-    color: #9e2fba;
-    background-color: #D9D9D9;
-}
-.acomodacoes {
-    display: flex;
-    align-items: center;
-    height: 110px;
-    font-weight: 300;
-    color: #ffffff;
-}
-.localizacao {
-    display: flex;
-    color: #fFFFFF;
-    font-weight: 300;
-}
-.avaliacoes {
-    display: flex;
-    color: #ffffff;
-    font-weight: 300;
-}
-.explorar {
-    display: flex;
-    color: #fFFFFF;
-    font-weight: 300;
-}
-.login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    font-size: 20px;
-    gap: 10px;
-    padding-left: 1400px;
-    padding-top: 15px;
-    position: absolute;
-}
-.entrar {
-    background-color: #ffffff;
-    color: #9e2fba;
-    border-radius: 10px;
-    width: 120px;
-    height: 30px;
-    padding-top: 4px;
-    padding-left: 20px;
-}
-.cadastrar {
-    display: flex;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 600;
-    background-color: #ffffff;
-    color: #9e2fba;
-    border-radius: 7px;
-    width: 90px;
-    height: 19px;
-    padding-top: 2px;
-    padding-left: 8px;
-}
-.bandeiraagora {
-    display: flex;
-    align-items: center;
-    flex-flow: column-reverse;
-    gap: 25px;
-    padding-left: 1700px;
-    position: absolute;
-}
-.reserveagora{
-    color: #9e2fba;
-    background-color: #fFFFFF;
-    border-radius: 10px;
-    height: 35px;
-    width: 180px;
-    padding-top: 6px;
-    padding-left: 13px;
-    font-size: 19px;
-    font-family: "Inter";
-    font-weight: 400;
-}
-.bandeira {
-    display: flex;
-    gap: 35px;
-}
-
-
-
-
-body {
-    margin: 0%;
-    background: #f3F3F3;
-}
-
-section{
-    display: flex;
-    text-align: center;
-    flex-wrap: initial;
-    gap: 10px;
-    color: #818181;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  padding-top: 50px;
+  font-weight: 400;
+  color: #9e2fba;
+  background-color: #d9d9d9;
 }
 .corpo {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 .imagens {
-    display: flex;
-    width: 1800px;
-    position: absolute;
-    padding-top: 80px;
+  display: flex;
+  padding-top: 80px;
 }
 .imgpequena {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    align-items: center;
-}
-ul {
-    list-style-type: none;
-    float: left;
-}
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    padding-top: 30px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-.rodape {
-    display: flex;
-    background: #9e2fba;
-    color: #fFFFFF;
-    width: 100%;
-    bottom: 0%;
-    left: 0;
-    position: fixed;
-    margin-bottom: px;
-    height: 90px;
-}
-.fb {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2px;
-}
-.ig {
-    display: flex;
-    padding-left: 20px;
-    padding-top: 1px;
-}
-.booking{
-    display: flex;
-    padding-left: 20px;
-    padding-top: 2px;
-}
-.sobrerodape {
-    display: flex;
-    flex-flow: column;
-    font-size: 12px;
-    justify-content: center;
-    padding-left: 380px;
-    padding-bottom: 10px;
-}
-.sobrecontato {
-    display: flex;
-    font-size: 22px;
-    justify-content: center;
-    font-weight: 300;
-    padding-top: 20px;
-    font-family: 'Inter';
-}
-.direitosautorais {
-    font-size: 16px;
-    padding-left: 90px;
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 200;
-    line-height: 39px;
-    padding-right: 100px;
-}
-.wpp {
-    display: flex;
-    padding-left: 580px;
-    justify-content: center;
-}
-.logorodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 60px;
-}
-.trademark {
-    color: rgb(154, 180, 156);
-    font-family: 'Inter';
-    font-weight: 600;
-    font-style: normal;
+.img2 {
+  display: flex;
+  margin-left: 100px;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-.imagens li img {
-    width: 110px;
-    border-radius: 10px;
-    opacity: 0.6;
+.img-style {
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
 #trocarimg {
-    margin-left: 300px;
-    margin-top: 0px;
+  margin-left: 100px;
+  margin-top: 0px;
 }
 
 .fotogrande {
-    display: flex;
-    border-radius: 10px;
-    border: black;
-}
-.ulnova {
-    display: flex;
-    list-style-type: none;
-    float: right;
-    padding-left: 300px;
-    padding-top: 1px;
-    flex-flow: column;
-    justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  border: black;
 }

@@ -2,82 +2,157 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hostel El Alebrije na cidade de Valle del Bravo no México">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Hostel El Alebrije</title>
-    <link rel="stylesheet" type="text/css" href="sobre.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hostel El Alebrije na cidade de Valle del Bravo no México" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>El alebrije hostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header_style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="sobre.css" /> -->
+
+    <script>
+        const ano = document.getElementById("ano");
+        const anoAtual = new Date();
+    </script>
     <!--Inicio do abeçalho-->
-    <header>
-        <div class="LOGO">
-            <img src="img/Logo.svg" width="90px" alt="Logo do Hostel">
-        </div>
-        <nav class="navegação">
-            <div class="nomehostel">
-                <h1 class="Hostel">Hostal</h1>
-                <h5 class="Elalebrije">El Alebrije</h5>
-            </div>
-            <div class="cabeçalhoselecionavel">
-                    <a href="sobre.html" class="sobre">SOBRE</a>
-                    <a class="fotos" href="fotos.html">FOTOS</a>
-                    <a href="acomodacoes.html" class="acomodacoes">ACOMODAÇÕES</a>
-                    <a href="" class="localizacao">LOCALIZAÇÃO</a>
-                    <a href="" class="avaliacoes">AVALIAÇÕES</a>
-                    <a href="" class="explorar">EXPLORAR</a>
-            </div>
-            <div class="login">
-                <div class="entrar"><strong>ENTRAR</strong></div>
-                <div class="cadastrar">CADASTRAR</div>
-            </div>
-        </nav>
 
-        <div class="bandeiraagora">
-            <div class="reserveagora">RESERVE AGORA</div>
-            <div class="bandeira">
-                <img class="BRA" src="img/BRA.svg" alt="Bandeira Brasil" width="40px">
-                <img class="ESP" src="img/ESP.svg" alt="Bandeira Espanha" width="40px">
-                <img class="USA" src="img/USA.svg" alt="Bandeira Estado Unidos" width="40px">
-            </div>
-        </div>
-    </header>
-    <!--Fim do cabeçalho-->
 </head>
-
 <body>
-    <section class="corpo">
-        <h1 class="titulosobre"><strong>SOBRE</strong></h1>
-        <div class="texto">
-            <h2> Em 2017, tive meu primeiro contato com um hostel, viajando pela Costa do Pacífico no México. Durante
-                essas duas semanas, conheci muitas pessoas, culturas, festas e experiências, e me afeiçoei a esse estilo
-                de vida. Após outras viagens que fiz e hostels pelos quais me hospedei, cheguei a um objetivo: criar o
-                meu próprio hostel.
-                <p>Localizado no Pueblo Magico – apelido dado a cidade Valle De Bravo –, no centro do México, o Hostel
-                    El Alebrije é o primeiro e único hostel da região, e desde a sua criação em 2019, temos aumentado o
-                    turismo local com o que há de melhor para a sua hospedagem, incentivando viajantes e mochileiros a
-                    conhecerem nossa cidade com valores que cabem no bolso.</p>
-            </h2>
-        </div>
-        <h3 class="despedida">Esperamos por você!</H3>
-    </section>
-    <!--Inicio do rodapé-->
-    <footer class="rodape">
-        <div class="logorodape">
-            <img class="fb" src="img/fb.svg" width="42px" alt="Facebook Logo">
-            <img class="ig" src="img/ig.svg" width="60px" alt="Instagram Logo">
-            <img class="booking" src="img/booking.svg" width="150px" alt="Booking Logo">
-        </div>
-        <div class="sobrerodape">
-            <h1 class="sobrecontato"><strong>Sobre · Contato</strong></h1>
+    <header style="background: #9e2fba; color: #eeecee">
+        <div class="center">
+            <div class="logo">
+                <h3><img src="../assets/hostal.png" width="103">
+            </div>
+            <!--center-->
+            <div class="hostal">
+                <h3 style="font-size: 14px;"><i>&nbsp;&nbsp; Hostal<p><b>El Alebrije</b></i></h3>
+                </p>
+            </div>
+            <!--hostal-->
 
-            <ul class="direitosautorais"> © <id class="trademark"> ElAlebrije </id>2022 Todos os direitos reservados
-            </ul>
+            <div class="menu-container">
+                <a class="active-menu" href="" target="_self">SOBRE</a>
+                <a href="../PaginaFotos/fotos.html" target="_self">FOTOS</a>
+                <a href="../PaginaAcomodacao/acomodacoes.html" target="_self">ACOMODAÇÕES</a>
+                <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
+                <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
+                <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
+            </div>
+            <!--menu-container-->
         </div>
-        <div class="wpp">
-            <img src="img/wpp.svg" alt="WhatsApp Logo" width="57px">
+        <div class="translate">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
+                    margin="35px 0;"></a>
         </div>
-    </footer>
-    <!--Fim do rodapé-->
+        <div class="translate1">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+        <div class="translate2">
+            <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+
+        <button class="btn-res" style="font-size: 20px; margin-top: 0.3rem;"><a
+                href="../acomodacao.html">Reserve&nbsp;agora </a>
+        </button>
+
+        <div class="btn">
+            <button class="btn-enter"><b><a href="../Login/index.html">ENTRAR</b></a>
+        </div>
+        <button class="btn-cad" style="font-size: 12px; margin-top: 0.3rem;"><b><a
+                    href="../CriarUmaConta/index.html">CADASTRAR</b></a></div>
+
+            </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title col-md-12">
+                    <h3>Sobre</h3>
+                    <hr class="line-localization">
+                </div>
+                <div style="margin-top:1rem; text-align: justify;">
+                    <span style="font-size:25px">Em 2017, tive meu primeiro contato com um hostel, viajando pela Costa
+                        do Pacífico no México. Durante essas duas semanas, conheci muitas
+                        pessoas, culturas, festas e experiências, e me afeiçoei a esse estilo
+                        de vida. Após outras viagens que fiz e hostels pelos quais me
+                        hospedei, cheguei a um objetivo: criar o meu próprio hostel.
+                        <p style="font-size:25px; margin-top:0.8rem">
+                            Localizado no Pueblo Magico – apelido dado a cidade Valle De Bravo
+                            –, no centro do México, o Hostel El Alebrije é o primeiro e único
+                            hostel da região, e desde a sua criação em 2019, temos aumentado o
+                            turismo local com o que há de melhor para a sua hospedagem,
+                            incentivando viajantes e mochileiros a conhecerem nossa cidade com
+                            valores que cabem no bolso.
+                        </p>
+                    </span>
+                    <h3 style="margin-top: 2rem; text-align: center">Esperamos por você!</h3>
+                </div>
+            </div>
+            <div class="footer">
+                <div style="display: flex; margin-left: 1rem; align-items: center">
+                    <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/fb.svg" alt="facebook" />
+                    </a>
+                    <a href="https://instagram.com/alebrije_hostaal?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/insta.svg" alt="insta" />
+                    </a>
+                    <a href="https://www.booking.com/hotel/mx/hostal-el-alebrije.en-gb.html" target="_blank"
+                        rel="noopener">
+                        <img class="footer-img" src="../assets/booking.svg" alt="bookin" />
+                    </a>
+                </div>
+                <span class="text-copyright">&#169 ElAlebrije <span id="ano">2022</span> - Todos os direitos
+                    reservados</span>
+                <div className="footerSide">
+                    <a href="https://api.whatsapp.com/send?phone=5217223960938" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/wpp.svg" alt="whatsapp" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section class="corpo">
+
+      <div class="texto">
+        <h2>
+          Em 2017, tive meu primeiro contato com um hostel, viajando pela Costa
+          do Pacífico no México. Durante essas duas semanas, conheci muitas
+          pessoas, culturas, festas e experiências, e me afeiçoei a esse estilo
+          de vida. Após outras viagens que fiz e hostels pelos quais me
+          hospedei, cheguei a um objetivo: criar o meu próprio hostel.
+          <p>
+            Localizado no Pueblo Magico – apelido dado a cidade Valle De Bravo
+            –, no centro do México, o Hostel El Alebrije é o primeiro e único
+            hostel da região, e desde a sua criação em 2019, temos aumentado o
+            turismo local com o que há de melhor para a sua hospedagem,
+            incentivando viajantes e mochileiros a conhecerem nossa cidade com
+            valores que cabem no bolso.
+          </p>
+        </h2>
+      </div>
+      <h3 class="despedida">Esperamos por você!</h3>
+    </section> -->
+    <!--Inicio do rodapé-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

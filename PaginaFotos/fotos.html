@@ -3,119 +3,152 @@
 
 <head>
     <script src="fotos.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hostel El Alebrije na cidade de Valle del Bravo no México">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>Hostel El Alebrije</title>
-    <link rel="stylesheet" type="text/css" href="fotos.css">
-    <!--Inicio do abeçalho-->
-    <header>
-        <div class="LOGO">
-            <img src="img/Logo.svg" width="90px" alt="Logo do Hostel">
-        </div>
-        <nav class="navegação">
-            <div class="nomehostel">
-                <h1 class="Hostel">Hostal</h1>
-                <h5 class="Elalebrije">El Alebrije</h5>
-            </div>
-            <div class="cabeçalhoselecionavel">
-                <a href="sobre.html" class="sobre">SOBRE</a>
-                <a href="fotos.html" class="fotos">FOTOS</a>
-                <a href="acomodacoes.html" class="acomodacoes">ACOMODAÇÕES</a>
-                <a href="" class="localizacao">LOCALIZAÇÃO</a>
-                <a href="" class="avaliacoes">AVALIAÇÕES</a>
-                <a href="" class="explorar">EXPLORAR</a>
-            </div>
-            <div class="login">
-                <div class="entrar"><strong>ENTRAR</strong></div>
-                <div class="cadastrar">CADASTRAR</div>
-            </div>
-        </nav>
-
-        <div class="bandeiraagora">
-            <div class="reserveagora">RESERVE AGORA</div>
-            <div class="bandeira">
-                <img class="BRA" src="img/BRA.svg" alt="Bandeira Brasil" width="40px">
-                <img class="ESP" src="img/ESP.svg" alt="Bandeira Espanha" width="40px">
-                <img class="USA" src="img/USA.svg" alt="Bandeira Estado Unidos" width="40px">
-            </div>
-        </div>
-    </header>
-    <!--Fim do cabeçalho-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hostel El Alebrije na cidade de Valle del Bravo no México" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>El alebrije hostel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="../css/global.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header_style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="fotos.css" />
 </head>
 
 <body>
+    <header style="background: #9e2fba; color: #eeecee">
+        <div class="center">
+            <div class="logo">
+                <h3><img src="../assets/hostal.png" width="103">
+            </div>
+            <!--center-->
+            <div class="hostal">
+                <h3 style="font-size: 14px;"><i>&nbsp;&nbsp; Hostal<p><b>El Alebrije</b></i></h3>
+                </p>
+            </div>
+            <!--hostal-->
 
-    <main>
-        <section class="corpo">
-            <h1 class="titulofotos"><strong>FOTOS</strong></h1>
-            <div class="imagens">
-                <main class="imgpequena">
-                    <ul>
-                        <li>
-                            <img src="img/trocaimg01.jpg" width="100px" alt="Rede de balanço 1" onclick="img01();">
-                        </li>
-                        <li>
-                            <img src="img/trocaimg02.jpg" width="100px" alt="Rede de balanço 2" onclick="img02();">
-                        </li>
-                        <li>
-                            <img src="img/trocaimg03.jpg" width="100px" alt="Quadro Decorativo" onclick="img03();">
-                        </li>
-                        <li>
-                            <img src="img/trocaimg04.jpg" width="100px" alt="Cozinha Hostel" onclick="img04();">
-                        </li>
-                        <li>
-                            <img src="img/trocaimg05.jpg" width="100px" alt="Sala Hostel" onclick="img05();">
-                        </li>
-                        <li>
-                            <img src="img/trocaimg06.jpg" width="100px" alt="Mapa Mundi" onclick="img06();">
-                        </li>
-                    </ul>
-                </main>
-                <img class="fotogrande" src="img/trocaimg06.jpg" width="1000px" height="630"
-                    alt="imagem alterada por JS" id="trocarimg">
-                <ul class="ulnova">
-                    <li>
-                        <img src="img/trocaimg07.jpg" width="100px" alt="Banheiro" onclick="img07();">
-                    </li>
-                    <li>
-                        <img src="img/trocaimg08.jpg" width="100px" alt="Quarto Casal Privado" onclick="img08();">
-                    </li>
-                    <li>
-                        <img src="img/trocaimg09.jpg" width="100px" alt="Quarto Compartilhado1" onclick="img09();">
-                    </li>
-                    <li>
-                        <img src="img/trocaimg10.jpg" width="100px" alt="Quarto Compartilhado2" onclick="img10();">
-                    </li>
-                    <li>
-                        <img src="img/trocaimg11.jpg" width="100px" alt="Quarto Compartilhado 3" onclick="img11();">
-                    </li>
-                    <li>
-                        <img src="img/trocaimg12.jpg" width="100px" alt="Outro mapa mundi" onclick="img12();">
-                    </li>
-                </ul>
+            <div class="menu-container">
+                <a href="../PaginaSobre/sobre.html" target="_self">SOBRE</a>
+                <a class="active-menu" href="" target="_self">FOTOS</a>
+                <a href="../PaginaAcomodacao/acomodacoes.html" target="_self">ACOMODAÇÕES</a>
+                <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
+                <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
+                <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
+            </div>
+            <!--menu-container-->
+        </div>
+        <div class="translate">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+        <div class="translate1">
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
+        <div class="translate2">
+            <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
+                    margin="35px 0;"></a>
+        </div>
 
-        </section>
-    </main>
-    <!--Inicio do rodapé-->
-    <footer class="rodape">
-        <div class="logorodape">
-            <img class="fb" src="img/fb.svg" width="42px" alt="Facebook Logo">
-            <img class="ig" src="img/ig.svg" width="60px" alt="Instagram Logo">
-            <img class="booking" src="img/booking.svg" width="150px" alt="Booking Logo">
-        </div>
-        <div class="sobrerodape">
-            <h1 class="sobrecontato"><strong>Sobre · Contato</strong></h1>
+        <button class="btn-res" style="font-size: 20px; margin-top: 0.3rem;"><a
+                href="../acomodacao.html">Reserve&nbsp;agora </a>
+        </button>
 
-            <ul class="direitosautorais"> © <id class="trademark"> ElAlebrije </id>2022 Todos os direitos reservados
-            </ul>
+        <div class="btn">
+            <button class="btn-enter"><b><a href="../Login/index.html">ENTRAR</b></a>
         </div>
-        <div class="wpp">
-            <img src="img/wpp.svg" alt="WhatsApp Logo" width="57px">
+        <button class="btn-cad" style="font-size: 12px; margin-top: 0.3rem;"><b><a
+                    href="../CriarUmaConta/index.html">CADASTRAR</b></a></div>
+
+            </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="title col-md-12">
+                <h3>FOTOS</h3>
+                <hr class="line-localization">
+            </div>
+            <div class="col-md-12" style="display: flex; justify-content: center; margin-top: 2.5rem;">
+                <div class="imgpequena">
+
+                    <img style="border-radius: 8px;" src="img/trocaimg01.jpg" width="110px" alt="Rede de balanço 1"
+                        onclick="img01();">
+
+                    <img class="img-style" src="img/trocaimg02.jpg" width="110px" alt="Rede de balanço 2"
+                        onclick="img02();">
+
+                    <img class="img-style" src="img/trocaimg03.jpg" width="110px" alt="Quadro Decorativo"
+                        onclick="img03();">
+
+                    <img class="img-style" src="img/trocaimg04.jpg" width="110px" alt="Cozinha Hostel"
+                        onclick="img04();">
+
+                    <img class="img-style" src="img/trocaimg05.jpg" width="110px" alt="Sala Hostel" onclick="img05();">
+
+                    <img class="img-style" src="img/trocaimg06.jpg" width="110px" alt="Mapa Mundi" onclick="img06();">
+                </div>
+                <img class="fotogrande" src="img/trocaimg06.jpg" width="700px" height="600px"
+                    alt="imagem alterada por JS" id="trocarimg" />
+                <div class="img2">
+                    <img style="border-radius: 8px;" src="img/trocaimg07.jpg" width="110px" alt="Banheiro"
+                        onclick="img07();">
+
+                    <img class="img-style" src="img/trocaimg08.jpg" width="110px" alt="Quarto Casal Privado"
+                        onclick="img08();">
+
+                    <img class="img-style" src="img/trocaimg09.jpg" width="110px" alt="Quarto Compartilhado1"
+                        onclick="img09();">
+
+                    <img class="img-style" src="img/trocaimg10.jpg" width="110px" alt="Quarto Compartilhado2"
+                        onclick="img10();">
+
+                    <img class="img-style" src="img/trocaimg11.jpg" width="110px" alt="Quarto Compartilhado 3"
+                        onclick="img11();">
+
+                    <img class="img-style" src="img/trocaimg12.jpg" width="110px" alt="Outro mapa mundi"
+                        onclick="img12();">
+                </div>
+            </div>
+
+            <div class="footer">
+                <div style="display: flex; margin-left: 1rem; align-items: center">
+                    <a href="https://www.facebook.com/alebrijehostal/" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/fb.svg" alt="facebook" />
+                    </a>
+                    <a href="https://instagram.com/alebrije_hostaal?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/insta.svg" alt="insta" />
+                    </a>
+                    <a href="https://www.booking.com/hotel/mx/hostal-el-alebrije.en-gb.html" target="_blank"
+                        rel="noopener">
+                        <img class="footer-img" src="../assets/booking.svg" alt="bookin" />
+                    </a>
+                </div>
+                <span class="text-copyright">&#169 ElAlebrije <span id="ano">2022</span> - Todos os direitos
+                    reservados</span>
+                <div className="footerSide">
+                    <a href="https://api.whatsapp.com/send?phone=5217223960938" target="_blank" rel="noopener">
+                        <img class="footer-img" src="../assets/wpp.svg" alt="whatsapp" />
+                    </a>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!--Fim do rodapé-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
