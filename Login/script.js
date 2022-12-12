@@ -32,3 +32,6 @@ function checkEmail(email) {
     email
   );
 }
+//ativando a função quando houver alterção no documento
+window.location.href =“../index.html”
+salvarData()
