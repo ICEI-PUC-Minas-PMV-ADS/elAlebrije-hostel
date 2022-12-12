@@ -1,14 +1,8 @@
-const form = document.getElementById("form");
+const form = document.getElementById("enviar");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  checkInputs();
-});
 
 function checkInputs() {
   const usernameValue = username.value;
@@ -112,8 +106,13 @@ var salvarData = function () {
   localStorage.setItem("password-confirmation", passwordConfirmation);
 };
 
+form.addEventListener("click", (e) => {
+  e.preventDefault();
+  checkInputs();
+  document.onchange = salvarData;
+});
+
 // Ativando o função quando houver alteração no documento
-document.onchange = salvarData;
 
 // Definindo o valor
 // Caso não tenho vai zerar

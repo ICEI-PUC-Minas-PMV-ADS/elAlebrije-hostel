@@ -10,61 +10,65 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/header_style.css">
     <link rel="stylesheet" type="text/css" href="./ReviseDados/assets/global.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
-    <script src="./script.js" defer></script>
+
     <title>El alebrije hostel</title>
 </head>
 
 <body>
     <header style="background: #9e2fba; color: #eeecee">
         <div class="center">
-          <div class="logo" style="margin-top: 0.5rem">
-            <h3><img src="../assets/hostal.png" width="103">
-          </div>
-          <!--center-->
-          <div class="hostal">
-            <h3 style="font-size: 14px;"><i>&nbsp;&nbsp; Hostal<p><b>El Alebrije</b></i></h3>
-            </p>
-          </div>
-          <!--hostal-->
+            <div class="logo" style="margin-top: 0.5rem">
+                <h3><img src="../assets/hostal.png" width="103">
+            </div>
+            <!--center-->
+            <div class="hostal">
+                <h3 style="font-size: 14px;"><i>&nbsp;&nbsp; Hostal<p><b>El Alebrije</b></i></h3>
+                </p>
+            </div>
+            <!--hostal-->
 
-          <div class="menu-container">
-            <a href="../PaginaSobre/sobre.html" target="_self">SOBRE</a>
-            <a href="../PaginaFotos/fotos.html" target="_self">FOTOS</a>
-            <a href="" target="_self">ACOMODAÇÕES</a>
-            <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
-            <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
-            <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
-          </div>
-          <!--menu-container-->
+            <div class="menu-container">
+                <a href="../PaginaSobre/sobre.html" target="_self">SOBRE</a>
+                <a href="../PaginaFotos/fotos.html" target="_self">FOTOS</a>
+                <a href="./PaginaAcomodacao/acomodacoes.html" target="_self">ACOMODAÇÕES</a>
+                <a href="../PaginasLocalizacao/Localizacao.html" target="_self">LOCALIZAÇÃO</a>
+                <a href="../ReviseDados/AvaliacaoPublicacao.html" target="_self">AVALIAÇÕES</a>
+                <a href="../PaginaExplore/Explore.html" target="_self">EXPLORE</a>
+            </div>
+            <!--menu-container-->
         </div>
         <div class="translate">
-          <div id="google_translate_element" class="boxTradutor"></div>
-          <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
-              margin="35px 0;"></a>
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('pt')"><img alt="português" src="../assets/Br.jpg" width="35px;"
+                    margin="35px 0;"></a>
         </div>
         <div class="translate1">
-          <div id="google_translate_element" class="boxTradutor"></div>
-          <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
-              margin="35px 0;"></a>
+            <div id="google_translate_element" class="boxTradutor"></div>
+            <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="../assets/esp.png" width="35px;"
+                    margin="35px 0;"></a>
         </div>
         <div class="translate2">
-          <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
-              margin="35px 0;"></a>
+            <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="../assets/us.png" width="35px;"
+                    margin="35px 0;"></a>
         </div>
 
-        <button class="btn-res" style="margin-top: 0.1rem;"><a href="./acomodacao.html" style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
+        <button class="btn-res" style="margin-top: 0.1rem;"><a href="./acomodacao.html"
+                style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
         </button>
 
         <div class="btn">
-          <button class="btn-enter"><b><a href="./Login/index.html" style="height: 30px; width: 30px; padding:0.6rem">ENTRAR</b></a>
+            <button class="btn-enter"><b><a href="./Login/index.html"
+                        style="height: 30px; width: 30px; padding:0.6rem">ENTRAR</b></a>
         </div>
-        <button class="btn-cad"><b><a href="./CriarUmaConta/index.html" style="height: 30px; width: 30px; padding:0.6rem">CADASTRAR</b></a></div>
+        <button class="btn-cad"><b><a href="./CriarUmaConta/index.html"
+                    style="height: 30px; width: 30px; padding:0.6rem">CADASTRAR</b></a></div>
 
-          </div>
-      </header>
+            </div>
+    </header>
 
     <div class="container">
         <div class="barra-container">
@@ -102,29 +106,11 @@
                                 </div>
                             </div>
                             <p>Dados da reserva:</p>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Responsável</span>
-                                <input disabled="disable" type="number" value="#" class="form-control"
-                                    aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Hóspedes</span>
-                                <input disabled="disable" type="number" value="#" class="form-control"
-                                    aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Data de entrada</span>
-                                <input disabled="disable" type="number" value="#" class="form-control"
-                                    aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">Data de saída</span>
-                                <input disabled="disable" type="number" value="#" class="form-control"
-                                    aria-label="Amount (to the nearest dollar)">
-                            </div>
-                            </div>
-                            <br><br>
-                            <div>
+                            <div id="responsavel-dados"></div>
+                            <div id="escolha"></div>
+                        </div>
+
+                        <div style="margin-top: 2rem">
                             <h4>Obrigado por nos escolher!</h4>
                             <h5>Transferência bancária:</h5>
                             <br>
@@ -134,21 +120,23 @@
                             <p>NUBANK EM NOME DE: Aline Gomes Moura</p>
                             <br>
                             <p><b>DADOS BANCÁRIOS PARA TRANSFERÊNCIA/DEPÓSITO:</b></p>
-                                <br>
-                                    <p>MEU HOSTEL LTDA-ME</p>
-                                <p>BANCO DO NORDESTE (BANCO No 004)</p>
-                                <p>AGÊNCIA: 0190 / CONTA CORRENTE: 39809-4</p>
-                                <p>CNPJ: 26.528.243/0001-90</p>
-                                <p><b>Favor enviar comprovante para reservas@meu-hostel.com ou no
-                                whatsapp:8233854410</b></p>
-                                 <p>Se você não receber um e-mail dentro de 24 horas, por favor cheque
-                                    na sua lixeira eletrônica.</p>
-                    </div>
+                            <br>
+                            <p>MEU HOSTEL LTDA-ME</p>
+                            <p>BANCO DO NORDESTE (BANCO No 004)</p>
+                            <p>AGÊNCIA: 0190 / CONTA CORRENTE: 39809-4</p>
+                            <p>CNPJ: 26.528.243/0001-90</p>
+                            <p><b>Favor enviar comprovante para reservas@meu-hostel.com ou no
+                                    whatsapp:8233854410</b></p>
+                            <p>Se você não receber um e-mail dentro de 24 horas, por favor cheque
+                                na sua lixeira eletrônica.</p>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <div class="finalizar">
-                    <button type="submit" style="background: #9e2fba; padding: 1rem 2rem 1rem 2rem; color: #fff; font-size: 18px; border-radius: 30px;" value="finalizar">Finalizar</button>
+                    <button type="submit"
+                        style="background: #9e2fba; padding: 1rem 2rem 1rem 2rem; color: #fff; font-size: 18px; border-radius: 30px;"
+                        value="finalizar">Finalizar</button>
                 </div>
             </div>
             <div class="footer">
@@ -173,6 +161,40 @@
                     </a>
                 </div>
             </div>
+
+            <script>
+                const quartoEscolhido = JSON.parse(localStorage.getItem("escolha-quarto"));
+                const responsavel = JSON.parse(localStorage.getItem("revisao-dados"));
+
+                document.getElementById('responsavel-dados').innerHTML = responsavel.map(data =>
+                    `
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Responsável</span>
+                            <span class="form-control" style="border-radius: 0 4px 4px 0; background: #ebecf0">${data.nomeCompleto}</span>
+                        </div>
+
+                    `
+                ).join('')
+
+                document.getElementById('escolha').innerHTML = quartoEscolhido.map(data =>
+
+                    `
+                    <div class="input-group mb-3">
+                            <span class="input-group-text">Quarto escolhido</span>
+                            <span class="form-control" style="border-radius: 0 4px 4px 0; background: #ebecf0">${data.quarto}</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Data de entrada</span>
+                            <span class="form-control" style="border-radius: 0 4px 4px 0; background: #ebecf0">${data.entrada === ""? "Data não informada" : moment(data.entrada).format('DD/MM/YYYY')}</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Data de saída</span>
+                            <span class="form-control" style="border-radius: 0 4px 4px 0; background: #ebecf0">${data.saida === ""? "Data não informada" : moment(data.saida).format('DD/MM/YYYY')}</span>
+                        </div>
+
+                    `
+                ).join('')
+            </script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <script type="text/javascript" src="https://js.stripe.com/v2/"></script>

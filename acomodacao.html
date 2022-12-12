@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="./css/header_style.css">
     <link rel="stylesheet" type="text/css" href="./ReviseDados/assets/global.css" />
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
-    <script src="./script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./Acomodacaoform.js" defer></script>
     <title>El alebrije hostel</title>
 
     <style type="text/css">
@@ -65,246 +66,253 @@
                     margin="35px 0;"></a>
         </div>
 
-        <button class="btn-res" style="margin-top: 0.1rem;"><a href="../acomodacao.html" style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
+        <button class="btn-res" style="margin-top: 0.1rem;"><a href="../acomodacao.html"
+                style="height: 30px; width: 30px; padding:0.6rem">Reserve&nbsp;agora </a>
         </button>
 
         <div class="btn">
-          <button class="btn-enter"><b><a href="./Login/index.html" style="height: 30px; width: 30px; padding:0.6rem">ENTRAR</b></a>
+            <button class="btn-enter"><b><a href="./Login/index.html"
+                        style="height: 30px; width: 30px; padding:0.6rem">ENTRAR</b></a>
         </div>
-        <button class="btn-cad"><b><a href="./CriarUmaConta/index.html" style="height: 30px; width: 30px; padding:0.6rem">CADASTRAR</b></a></div>
+        <button class="btn-cad"><b><a href="./CriarUmaConta/index.html"
+                    style="height: 30px; width: 30px; padding:0.6rem">CADASTRAR</b></a></div>
 
-          </div>
+            </div>
     </header>
     <div class="container">
         <div class="barra-container">
             <div class="barra"></div>
         </div>
         <div class="row">
-            <div class="col-md-12 steps-dados">
-                <div class="dados">
-                    <img src="./assets/cama-de-hotel.svg" alt="hotel-bed" class="img-responsive" />
-                    <div class="dados-active">
-                        <span style="color: #fff; font-size: 18px;">Escolha seu quarto</span>
+            <form name="escolhaQuarto" action="">
+                <div class="col-md-12 steps-dados">
+                    <div class="dados">
+                        <img src="./assets/cama-de-hotel.svg" alt="hotel-bed" class="img-responsive" />
+                        <div class="dados-active">
+                            <span style="color: #fff; font-size: 18px;">Escolha seu quarto</span>
+                        </div>
+                    </div>
+                    <div class="dados-confirmacao">
+                        <img src="./assets/aceitaram.svg" alt="hotel-bed" class="img-responsive" opa />
+                        <div class="dados-disable">
+                            <span style="color: #000; font-size: 18px;">Revise seus dados</span>
+                        </div>
+                    </div>
+                    <div class="dados-confirmacao">
+                        <img src="./assets/verificado.svg" alt="hotel-bed" class="img-responsive" />
+                        <div class="dados-disable">
+                            <span style="color: #000; font-size: 18px;">Confirmação</span>
+                        </div>
                     </div>
                 </div>
-                <div class="dados-confirmacao">
-                    <img src="./assets/aceitaram.svg" alt="hotel-bed" class="img-responsive" opa />
-                    <div class="dados-disable">
-                        <span style="color: #000; font-size: 18px;">Revise seus dados</span>
-                    </div>
-                </div>
-                <div class="dados-confirmacao">
-                    <img src="./assets/verificado.svg" alt="hotel-bed" class="img-responsive" />
-                    <div class="dados-disable">
-                        <span style="color: #000; font-size: 18px;">Confirmação</span>
-                    </div>
-                </div>
-            </div>
-            <div class="form-review">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-9 ">
-                                <div class="text-center">
-                                    <h4>Acomodações</h4>
+                <div class="form-review">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-9 ">
+                                    <div class="text-center">
+                                        <h4>Acomodações</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 ">
+                                    <div class="text-center">
+                                        <h4>Hóspedes</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 ">
-                                <div class="text-center">
-                                    <h4>Hóspedes</h4>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex">
+                                    <input type="radio" id="quarto1" name="quarto" value="Quarto 1 -> 3 pessoas(Privado)" />
+                                    <img src="./images/quarto.svg" style="height: 300px;"
+                                        class="img-fluid rounded-start" alt="quarto01">
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <div class="card  mb-3">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item text-center">
+                                                <h5 class="card-title ">3 Pessoas</h5>
+                                                <p class="card-text">Privado</p>
+                                            </li>
+                                            <li class="list-group-item text-center">
+                                                <p class="card-text">Café da manha incluso</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="129.65" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text backgroundWhite">
+                                            <img src="./assets/user.png" style="height: 24px;" />
+                                        </span>
+                                        <select class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="129.65" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex">
+                                    <input type="radio" id="quarto2" name="quarto" value="Quarto 2 -> 6 pessoas(Misto)" />
+                                    <img src="./images/img008.svg" style="height: 300px" class="img-fluid rounded-start"
+                                        alt="quarto02">
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <div class="card  mb-3">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item text-center">
+                                                <h5 class="card-title ">6 Pessoas</h5>
+                                                <p class="card-text">Misto</p>
+                                            </li>
+                                            <li class="list-group-item text-center">
+                                                <p class="card-text">Café da manha incluso</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="56.18" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text backgroundWhite">
+                                            <img src="./assets/user.png" style="height: 24px;" />
+                                        </span>
+                                        <select class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="56.18" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-5 d-flex">
+                                    <input type="radio" id="quarto3" name="quarto" value="Quarto 3 -> 4 pessoas(Misto)" />
+                                    <img src="./images/img012.svg" style="height: 300px;"
+                                        class="img-fluid rounded-start" alt="quarto03">
+                                </div>
+                                <div class="col-sm-4 text-right">
+                                    <div class="card  mb-3">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item text-center">
+                                                <h5 class="card-title ">4 Pessoas</h5>
+                                                <p class="card-text">Misto</p>
+                                            </li>
+                                            <li class="list-group-item text-center">
+                                                <p class="card-text">Café da manha incluso</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="58.92" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text backgroundWhite">
+                                            <img src="./assets/user.png" style="height: 24px;" />
+                                        </span>
+                                        <select class="form-select">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="58.92" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <img src="./images/quarto.svg" style="height: 300px;" class="img-fluid rounded-start"
-                                    alt="quarto01">
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <div class="card  mb-3">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item text-center">
-                                            <h5 class="card-title ">3 Pessoas</h5>
-                                            <p class="card-text">Privado</p>
-                                        </li>
-                                        <li class="list-group-item text-center">
-                                            <p class="card-text">Café da manha incluso</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="129.65" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)">
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text backgroundWhite">
-                                        <img src="./assets/user.png" style="height: 24px;" />
-                                    </span>
-                                    <select class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                    </select>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="129.65" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)">
-                                </div>
-                            </div>
+                <div class="col-md-12" style="display: flex">
+                    <div
+                        style="display: flex; justify-content: space-between;width: 100%; padding: 0.8rem; background: #9E2FBA; border-radius: 8px">
+                        <div>
+                            <label for="startDate" style="color: #fff">Entrada</label>
+                            <input id="startDate" class="form-control" type="date" />
+                        </div>
+                        <div>
+                            <label for="endDate" style="color: #fff">Saída</label>
+                            <input id="endDate" class="form-control" type="date" />
                         </div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <img src="./images/img008.svg" style="height: 300px" class="img-fluid rounded-start"
-                                    alt="quarto01">
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <div class="card  mb-3">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item text-center">
-                                            <h5 class="card-title ">6 Pessoas</h5>
-                                            <p class="card-text">Misto</p>
-                                        </li>
-                                        <li class="list-group-item text-center">
-                                            <p class="card-text">Café da manha incluso</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="56.18" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)">
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text backgroundWhite">
-                                        <img src="./assets/user.png" style="height: 24px;" />
-                                    </span>
-                                    <select class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                    </select>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="56.18" class="form-control">
-                                </div>
-                            </div>
+                    <div class="col-sm-6 offset-sm-1">
+                        <div class="card" style="height: 150px;">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center">
+                                    <h5 class="card-title ">Total</h5>
+                                </li>
+                                <li class="list-group-item text-center">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input disabled="disable" type="number" value="186.54" class="form-control"
+                                            style="text-align: center; background-color: white;">
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <img src="./images/img012.svg" style="height: 300px;" class="img-fluid rounded-start"
-                                    alt="quarto01">
-                            </div>
-                            <div class="col-sm-4 text-right">
-                                <div class="card  mb-3">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item text-center">
-                                            <h5 class="card-title ">4 Pessoas</h5>
-                                            <p class="card-text">Misto</p>
-                                        </li>
-                                        <li class="list-group-item text-center">
-                                            <p class="card-text">Café da manha incluso</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="58.92" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)">
+                </div>
+                <div class="col-sm-3 offset-sm-9 text-center">
+                    <div class="input-group mb-3 ">
+                        <button type="submit" id="salvar-alteracoes"
+                            style="margin-top:1rem; margin-left: 150px; float: right;background: #9e2fba; padding: 1rem 2rem 1rem 2rem; color: #fff; font-size: 18px; border-radius: 30px;">Próximo</button>
 
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text backgroundWhite">
-                                        <img src="./assets/user.png" style="height: 24px;" />
-                                    </span>
-                                    <select class="form-select">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                    </select>
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="58.92" class="form-control"
-                                        aria-label="Amount (to the nearest dollar)">
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-12" style="display: flex">
-                <div style="display: flex; justify-content: space-between;width: 100%; padding: 0.8rem; background: #9E2FBA; border-radius: 8px">
-                    <div>
-                        <label for="startDate" style="color: #fff">Entrada</label>
-                        <input id="startDate" class="form-control" type="date" />
-                    </div>
-                    <div>
-                        <label for="endDate" style="color: #fff">Saída</label>
-                        <input id="endDate" class="form-control" type="date" />
-                    </div>
-                </div>
-                <div class="col-sm-6 offset-sm-1">
-                    <div class="card" style="height: 150px;">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item text-center">
-                                <h5 class="card-title ">Total</h5>
-                            </li>
-                            <li class="list-group-item text-center">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">R$</span>
-                                    <input disabled="disable" type="number" value="186.54" class="form-control"
-                                        style="text-align: center; background-color: white;">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-3 offset-sm-9 text-center">
-                <div class="input-group mb-3 ">
-                    <a href="./ReviseDados/ReviseDados.html" target="_self">
-                        <input type="button"
-                            style="background: #9e2fba; padding: 1rem 2rem 1rem 2rem; color: #fff; font-size: 18px; border-radius: 30px;"
-                            value="Próximo" class="botaoProximo" />
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
 
         <div class="footer">

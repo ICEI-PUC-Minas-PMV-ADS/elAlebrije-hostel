@@ -46,10 +46,10 @@ var salvarData = function () {
   localStorage.setItem("email", email);
   localStorage.setItem("telefone", telefone);
   localStorage.setItem("nacionalidade", nacionalidade);
+  document.onchange = salvarData;
+
+  window.location.href = "../Reservas-GabrielleOliveira/Reservas.html";
+  alert("Dados salvos com sucesso!");
 };
 // Ativando o função quando houver alteração no documento
-document.onchange = salvarData;
-
-window.location.href = "../Reservas-GabrielleOliveira/Reservas.html";
 salvarData();
-alert("Dados salvos com sucesso!");
