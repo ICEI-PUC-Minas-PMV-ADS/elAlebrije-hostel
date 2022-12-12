@@ -1,4 +1,3 @@
-# Registro de Testes de Software
 
 # Registro de Testes de Software
 ## CT-01 - Validação dos Campos do Formulário
