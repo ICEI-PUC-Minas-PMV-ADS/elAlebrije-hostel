@@ -21,7 +21,7 @@ entrar.addEventListener("click", (e) => {
   const emailV = document.getElementById("email").value;
 
   if (emailV !== null && senha !== "") {
-    window.location.href = "";
+    window.location.href = "../index.html";
   } else {
     alert("Preencha todos os campos obrigatórios");
   }
@@ -33,5 +33,5 @@ function checkEmail(email) {
   );
 }
 //ativando a função quando houver alterção no documento
-window.location.href =“../index.html”
-salvarData()
+
+salvarData();

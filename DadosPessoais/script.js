@@ -48,7 +48,7 @@ var salvarData = function () {
   localStorage.setItem("nacionalidade", nacionalidade);
   document.onchange = salvarData;
 
-  window.location.href =“../index.html”;
+  window.location.href = "../index.html";
   alert("Dados salvos com sucesso!");
 };
 // Ativando o função quando houver alteração no documento
