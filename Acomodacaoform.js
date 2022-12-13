@@ -36,6 +36,6 @@ saveModification.addEventListener("click", (e) => {
   };
 
   updateProvider([provider]);
-  window.location.href = "../ReviseDados/ReviseDados.html";
+  window.location.href = "./ReviseDados/ReviseDados.html";
 });
 getInfoClient();
